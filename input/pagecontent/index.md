@@ -1,7 +1,9 @@
 
-**This Implementation Guide template includes skeleton pages for each part of an IHE supplement. The instructions for how to fill out these sections can be found in the included [Supplement Template](https://github.com/IHE/supplement-template/blob/master/suppl_template.md). This supplement template should not be included in your github repo or publication. It is included here for easy reference.**
-
-**TODO: Write your executive overview here. Usually a one paragraph explanation of what problem this implementation guide solves.**
+This Mobiles Cross-Enterprose (mXDE) Profile provides the means to access data elements extracted from shared
+structured documents. The profile enables the deployment of health data
+exchange infrastructures where fine-grained access to health data
+coexists and complements the sharing of coarse-grained documents and the
+fine-grained data elements they contain.
 
 <div markdown="1" class="stu-note">
 
@@ -13,7 +15,7 @@
 ### Organization of This Guide
 This guide is organized into the following sections:
 
-1. Volume 1:
+1. Volume 1: Profiles
    1. [Introduction](volume-1.html)
    1. [Actors and Transactions](volume-1.html#actors-and-transactions)
    1. [Actor Options](volume-1.html#actor-options)
@@ -21,27 +23,22 @@ This guide is organized into the following sections:
    1. [Overview](volume-1.html#overview)
    1. [Security Considerations](volume-1.html#security-considerations)
    1. [Cross Profile Considerations](volume-1.html#other-grouping)
+   1. [Deployment Models](volume-1.html#deployment-models)
 
-2. Volume 2: Transaction Detail
-   1. [FooBar do \[domain-YY\]](domain-YY.html)
+2. Volume 2: Transactions
+   1. [Retrieve Document Set \[ITI-43\]](ITI-43.html)
 
-3. Volume 3: Metadata and Content
-  - **TODO: point to your content profiles if you have them**
-
-4. Volume 4: National Extensions
-  - **TODO: point at your national extensions if you have them**
-
-5. Test Plan
+3. Test Plan
   - [Test Plan](testplan.html)
     - **TODO: point to your appendix if you have them**
-6. Other
+	
+4. Other
   - [Changes to Other Profiles](other.html)
     - **TODO: Actor and transaction definitions, new glossary terms.**
     - **TODO: Any changes needed to other specifications.**
 
-
-See also the [Table of Contents](toc.html) and
-the index of [Artifacts](artifacts.html) defined as part of this implementation guide.
+Click on any of the links above, navigate the contents using the [Table of Contents](toc.html) or,
+if you are looking for a specific artifact, check out the index of [Artifacts](artifacts.html).
 
 ### Conformance Expectations
 
@@ -59,8 +56,8 @@ Note that sometimes mustSupport will appear on elements with a minimal cardinali
 
 You can also download:
 
-* [this entire guide](full-ig.zip),
-* the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
-* the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
+- [this entire guide](full-ig.zip),
+- the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
+- the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
 
-The source code for this Implementation Guide can be found on **TODO: Put your github repo here**
+The source code for this Implementation Guide can be found on [IHE GitHub](https://github.com/IHE/ITI.mXDE).
