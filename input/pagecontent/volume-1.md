@@ -89,7 +89,7 @@ XDS and QEDm IHE Profiles.
 
 This profile supports a variety of deployment models. Two of those are discussed in Section 1:45.7
 
-## 1:45.1 mXDE Actors, Transactions, and Content Modules
+## 1:45.1 mXDE Actors, Transactions, and Content Modules <a name="actors-and-transactions"> </a>
 
 This section defines the actors, transactions, and/or content modules in
 this implementation guide. Further information about actor and transaction definitions can be found in the IHE Technical Frameworks General Introduction [Appendix A: Actors](https://profiles.ihe.net/GeneralIntro/ch-A.html) and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
@@ -157,7 +157,7 @@ The Data Element Provenance Consumer:
 
    - a grouped MHD Document Consumer.
 
-## 1:45.2 mXDE Actor Options
+## 1:45.2 mXDE Actor Options <a name="actor-options"> </a>
 
 Options that may be selected for each actor in this implementation guide, if any, are listed in Table 1:45.2-1 below. Dependencies 
 between options when applicable are specified in notes.
@@ -229,7 +229,7 @@ The Data Element Provenance Consume that supports this option:
 
 - shall be grouped with an MHD Document Consumer and thus be capable of accessing the documents referenced by any Provenance Resource.
 
-## 1:45.3 mXDE Required Actor Groupings
+## 1:45.3 mXDE Required Actor Groupings <a name="required-groupings"> </a>
 
 An actor from this profile (Column 1) shall implement all required
 transactions for the grouped actor (Column 3) in the Required Actor
@@ -367,7 +367,7 @@ groupings in other related profiles.
 </table>
 
 
-## 1:45.4 mXDE Overview
+## 1:45.4 mXDE Overview <a name="overview"> </a>
 
 ### 1:45.4.1 Concepts
 
@@ -459,7 +459,7 @@ Modify the following “Swimlane Diagram”.
 
 Figure 1:45.4.2.1.2-1: Basic Process Flow in mXDE Profile
 
-## 1:45.5 mXDE Security Considerations
+## 1:45.5 mXDE Security Considerations <a name="security-connsiderations"> </a>
 
 See ITI TF-2x: [Appendix Z.8 “Mobile Security Considerations”](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations)
 
@@ -545,7 +545,7 @@ these weaknesses of the data element granularity by allowing the user
 that retrieves a query list to easily request the document(s) that are
 sources of the data element(s) of interest.
 
-## 45.6 mXDE Cross Profile Considerations
+## 45.6 mXDE Cross Profile Considerations <a name="other-grouping"> </a>
 
 **ITI PIX - Patient Identity Cross Referencing and ITI PDQ - Patient Demographics Query**
 
@@ -555,7 +555,7 @@ or with a Patient Demographics Consumer in the PDQ, PDQV3, or PDQm
 Profiles to resolve patient identifiers prior to submitting QEDm, XDS or
 MHD queries.
 
-## 45.7 Deployment Models
+## 45.7 Deployment Models <a name="deployment-models"> </a>
 
 For the implementation of the mXDE Profile, a number of actors that
 generally are considered as part of a health information sharing
