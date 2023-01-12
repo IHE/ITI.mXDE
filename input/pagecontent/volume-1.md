@@ -69,7 +69,10 @@ as a “hub” in the middle is providing a location service to access both
 document-level or data element-level health data in a patient-centric
 manner.
 
-**TO DO: Add Figure 1:45-1**
+<div>
+<img src="451.PNG" width="100%">
+</div>
+
 **Figure 1:45-1: mXDE environment and multilevel granularity access to health information**
 
 Figure 1:45-2 below, depicts a deployment of the mXDE Profile which can
