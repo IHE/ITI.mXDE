@@ -1,5 +1,6 @@
 | Editor: Please update Volume 2, Sections 3.43, 3.43.1 and 3.43.2 as follows. |
 |-------------------------------------------------------------------------------|
+{:.grid .bg-info}
 
 This section corresponds to transaction \[ITI-43\] of the IHE Technical
 Framework. The Document Consumer, Document Repository and Initiating
@@ -10,6 +11,7 @@ Gateway Actors use transaction \[ITI-43\].
 | Cross-Enterprise Document Sharing-b (XDS.b)                                |
 | Cross-Community Access (XCA)                                               |
 | **<u>Mobile Cross-Enterprise Document Data Element Extraction (mXDE)</u>** |
+{:.grid}
 
 Actors that support the Asynchronous Web Services Exchange Option shall
 support Asynchronous Web Services Exchange on all XDS.b transactions
@@ -69,4 +71,6 @@ Consumer.</u>**
 
 | Editor: Please update Figure 3.43.4-1 Interaction Diagram as follows. |
 |-------------------------------------------------------------------------------|
-**To Do: Add Interaction Diagram**
+{:.grid .bg-info}
+
+**TO DO: Add Interaction Diagram**
