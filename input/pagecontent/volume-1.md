@@ -70,18 +70,19 @@ document-level or data element-level health data in a patient-centric
 manner.
 
 <div>
-<img src="451.PNG" width="100%">
+<img alt="mXDE environment and multilevel granularity access to health information" src="451.png" width="100%">
 </div>
-
 **Figure 1:45-1: mXDE environment and multilevel granularity access to health information**
 
 Figure 1:45-2 below, depicts a deployment of the mXDE Profile which can
-support the environment in Figure 45-1 above. It illustrates one
+support the environment in Figure 1:45-1 above. It illustrates one
 possible combination of mXDE actors (Data Element Extractor and Data
 Element Provenance Consumer) with actors and transactions from the MHD,
 XDS and QEDm IHE Profiles.
 
-**TO DO: Add Figure 1:45-2**
+<div>
+<img alt="mXDE Profile combining actors and transactions of other IHE Profiles" src="452.png" width="100%">
+</div>
 **Figure 1:45-2: mXDE Profile combining actors and transactions of other IHE Profiles**
 
 - Document-Level Granularity “publication” is out of scope of this profile but may be performed using the XDS Provide and Register \[ITI-41\] transaction, the MHD Provide Document Bundle \[ITI-65\] transaction or other means.
@@ -107,25 +108,31 @@ Three alternative groupings of actors are supported by mXDE. Each one is depicte
 
 Grouped actors are shown with conjoined boxes. The actors shown with dotted line boxes are specified by other IHE profiles.
 
-**TO DO: Add Figure 1:45.1-1
+<div>
+<img alt="mXDE Actor Diagram with QEDm and MHD" src="4511.png" width="100%">
+</div>
 **Figure 1:45.1-1: mXDE Actor Diagram with QEDm and MHD**
 
-**TO DO: Add Figure 1:45.1-21
+<div>
+<img alt="mXDE Actor Diagram with QEDm and XDS" src="4512.png" width="100%">
+</div>
 **Figure 1:45.1-2: mXDE Actor Diagram with QEDm and XDS**
 
-**TO DO: Add Figure 1:45.1-31
+<div>
+<img alt="mXDE Actor Diagram with QEDm, XDS and MHD" src="4513.png" width="100%">
+</div>
 **Figure 1:45.1-3: mXDE Actor Diagram with QEDm, XDS and MHD**
 
-Table 45.1-1 lists the transactions for each actor directly involved in
+Table 1:45.1-1 lists the transactions for each actor directly involved in
 the mXDE Profile.
 
-**Table 45.1-1: mXDE Profile - Actors and Transactions**
+**Table 1:45.1-1: mXDE Profile - Actors and Transactions**
 
 | Actors List                      | Transactions                      | Optionality    | Reference       |
 |----------------------------------|-----------------------------------|----------------|-----------------|
 | Data Element Extractor           | Retrieve Document Set \[ITI-43\]  | O (See Note 1) | ITI TF-2b: 3.43 |
 | Data Element Provenance Consumer | None                              | \-             | \-              |
-{: .grid}
+{:.grid .table-striped}
 
 *Note 1: This transaction is required if the Data Element Extractor supports the XDS Document Registry Integration Option. See Section 1:45.2.1.1.*
 
@@ -166,13 +173,13 @@ Options that may be selected for each actor in this implementation guide, if any
 between options when applicable are specified in notes.
 
 **Table 1:45.2-1**
-| Actor                            | Option Name                                 | Reference        |
-|----------------------------------|---------------------------------------------|------------------|
-| Data Element Extractor           | XDS Document Registry Integration (Note 1)  | Section 45.2.1.1 |
-|                                  | MHD Document Responder Integration (Note 1) | Section 45.2.1.2 |
-| Data Element Provenance Consumer | XDS Document Consumer Integration (Note 2)  | Section 45.2.2.1 |
-|                                  | MHD Document Consumer Integration (Note 2)  | Section 45.2.2.2 |
-{: .grid .table-striped}
+| Actor                            | Option Name                                 | Reference          |
+|----------------------------------|---------------------------------------------|--------------------|
+| Data Element Extractor           | XDS Document Registry Integration (Note 1)  | Section 1:45.2.1.1 |
+|                                  | MHD Document Responder Integration (Note 1) | Section 1:45.2.1.2 |
+| Data Element Provenance Consumer | XDS Document Consumer Integration (Note 2)  | Section 1:45.2.2.1 |
+|                                  | MHD Document Consumer Integration (Note 2)  | Section 1:45.2.2.2 |
+{:.grid .table-striped}
 *Note 1: The actor shall implement at least one of the options XDS Document Registry Integration or MHD Document Responder Integration
 *Note 2: The actor shall implement at least one of the options XDS Document Consumer Integration or MHD Document Consumer Integration.
 
@@ -242,7 +249,7 @@ Note that each one of the three alternatives of actor diagrams specified
 for the mXDE Implemetation Guide in Section 1:45.1 has different required actor
 groupings.
 
-**Table 45.3-1: mXDE Profile - Required Actor Groupings**
+**Table 1:45.3-1: mXDE Profile - Required Actor Groupings**
 
 <table border="1" borderspacing="0" style='border: 1px solid black; border-collapse: collapse'>
 <thead>
@@ -304,71 +311,6 @@ Option</td>
 Section 1:45.5 describes some optional groupings that may be of interest
 for security considerations and Section 1:45.6 describes some optional
 groupings in other related profiles.
-
-
-
-
-
-
-<table border="1" borderspacing="0" style='border: 1px solid black; border-collapse: collapse'>
-<tbody>
-<tr class="odd">
-<td>this Profile Acronym Actor</td>
-<td>Grouping Condition</td>
-<td>Actor(s) to be grouped with</td>
-<td>Reference</td>
-</tr>
-<tr class="even">
-<td>Actor A</td>
-<td>--</td>
-<td>None</td>
-<td>--</td>
-</tr>
-<tr class="odd">
-<td>Actor B</td>
-<td>Required</td>
-<td><p><em>external Domain Acronym or blank profile acronym/Actor</em></p>
-<p><em>e.g., ITI CT / Time Client</em></p></td>
-<td><p><em>TF Reference; typically from Vol 1</em></p>
-<p><em>(e.g., ITI TF-1: 7.1)</em></p></td>
-</tr>
-<tr class="even">
-<td>Actor C</td>
-<td>With the <em>Option name in this profile</em> Option</td>
-<td><em>external Domain Acronym or blank profile acronym/Actor</em></td>
-<td><em>Where the Option is defined in this profile Section XX.3 z</em></td>
-</tr>
-<tr class="odd">
-<td><p>Actor D</p>
-<p><em>if an actor has both required and conditional groupings, list the Required grouping first</em></p></td>
-<td>Required</td>
-<td><em>external Domain Acronym or blank profile acronym/Actor</em></td>
-<td><em>TF Reference; typically from Vol 1</em></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>If the <em>Option name in this profile</em> Option is supported.</td>
-<td><em>external Domain Acronym or blank profile acronym/Actor</em></td>
-<td><em>TF Reference; typically from Vol 1</em></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>If the <em>other Option name in this profile</em> Option is supported.</td>
-<td><em>external Domain Acronym or blank profile acronym/Actor</em></td>
-<td><em>TF Reference; typically from Vol 1</em></td>
-</tr>
-<tr class="even">
-<td><p>Actor E</p>
-<p><em>(In rare cases, the actor to be grouped with must implement an option, an example is in column 3)</em></p></td>
-<td>Required</td>
-<td><p><em>external Domain Acronym or blank profile acronym/Actor</em> with the <em>option name</em></p>
-<p><em>e.g. ITI RFD Form Filler with the Archive Form Option</em></p></td>
-<td><p><em>TF Reference to the Option definition; typically from Vol 1</em></p>
-<p><em>(eg ITI TF-1:17.3.11)</em></p></td>
-</tr>
-</tbody>
-</table>
-
 
 ## 1:45.4 mXDE Overview <a name="overview"> </a>
 
@@ -441,7 +383,7 @@ uses his tablet to:
 
 ##### 1:45.4.2.1.2 Process Flow
 
-Figure 45.2.1.2-1 illustrates the Use Case and assumes some possible
+Figure 1:45.2.1.2-1 illustrates the Use Case and assumes some possible
 actor groupings based on the scenario described. In particular, it
 assumes that a consumer application running on a mobile device (e.g.,
 the patient’s smartphone and the family physician’s tablet) supports IHE
@@ -452,15 +394,10 @@ groupings in the mXDE Profile are those specified in Section 1:45.3.
 
 Note: “Data Element” is abbreviated “DE” in the diagram below.
 
-**TODO Add Figure 1:45.4.2.1.2-1**
-Modify the following “Swimlane Diagram”.
-
 <div>
-{%include usecase1-processflow.svg%}
+<img alt="Basic Process FLow in mXDE Profile" src="4542121.png" width="100%">
 </div>
-<br clear="all">
-
-Figure 1:45.4.2.1.2-1: Basic Process Flow in mXDE Profile
+**Figure 1:45.4.2.1.2-1: Basic Process Flow in mXDE Profile**
 
 ## 1:45.5 mXDE Security Considerations <a name="security-connsiderations"> </a>
 
@@ -601,9 +538,10 @@ Element (DE) Extractor to access the documents for extracting and
 assembling the data elements and the provenance information to be shared
 with the Clinical Data Consumers and the Document Consumers.
 
-**TO DO Add Figure 1:45.7.1-1**
-
-**Figure 45.7.1-1: mXDE Deployment Model A**
+<div>
+<img alt="mXDE Deployment Model A" src="45711.png" width="100%">
+</div>
+**Figure 1:45.7.1-1: mXDE Deployment Model A**
 
 ### 1:45.7.2 mXDE Deployment Model B - Distributed Document Repository and Central Fine-Grained Data Source
 
@@ -626,7 +564,7 @@ This deployment model is a little more complex than the previous one as
 the repositories are distributed, but this complexity is transparent to
 the Clinical Data Consumers and Document Consumers.
 
-**TO DO Add Figure 1:45.7.2-1**
-
-**Figure 45.7.2-1: mXDE Deployment Model B**
-
+<div>
+<img alt="mXDE Deployment Model B" src="45721.png" width="100%">
+</div>
+**Figure 1:45.7.2-1: mXDE Deployment Model B**
