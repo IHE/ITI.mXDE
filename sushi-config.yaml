@@ -84,7 +84,7 @@ menu:
     Cross-Profile Considerations: volume-1.html#other-grouping
     Deployment Models: volume-1.html#deployment-models
   Volume 2:
-    "Retrieve Document Set [ITI-43]": iti-43.html
+    "Retrieve Document Set [ITI-43]": ITI-43.html
   Test Plan: testplan.html
   Artifacts: artifacts.html
   Other: other.html
