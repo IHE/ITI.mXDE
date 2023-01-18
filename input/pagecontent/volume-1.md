@@ -183,9 +183,9 @@ between options when applicable are specified in notes.
 *Note 1: The actor shall implement at least one of the options XDS Document Registry Integration or MHD Document Responder Integration
 *Note 2: The actor shall implement at least one of the options XDS Document Consumer Integration or MHD Document Consumer Integration.
 
-### 45.2.1 Data Element Extractor Actor Options
+### 1:45.2.1 Data Element Extractor Actor Options
 
-#### 45.2.1.1 XDS Document Registry Integration
+#### 1:45.2.1.1 XDS Document Registry Integration
 
 The support of this option by a Data Element Extractor enables:
 
@@ -201,7 +201,7 @@ The Data Element Extractor that supports this option:
 
 - shall be able to retrieve documents from an XDS.b Document Repository using the Retrieve Document Set \[ITI-43\] transaction.
 
-#### 45.2.1.2 MHD Document Responder Integration
+#### 1:45.2.1.2 MHD Document Responder Integration
 
 The support of this option by a Data Element Extractor enables:
 
@@ -217,9 +217,9 @@ The Data Element Extractor that supports this option:
 
 - shall obtain documents from the grouped MHD Document Responder.
 
-### 45.2.2 Data Element Provenance Consumer Actor Options
+### 1:45.2.2 Data Element Provenance Consumer Actor Options
 
-#### 45.2.2.1 XDS Document Consumer Integration
+#### 1:45.2.2.1 XDS Document Consumer Integration
 
 The support of this option enables a Data Element Provenance Consumer to
 access the referenced source documents managed by the XDS Document
@@ -229,7 +229,7 @@ The Data Element Provenance Consumer that supports this option:
 
 - shall be grouped with an XDS Document Consumer and thus be capable of accessing the documents referenced by any Provenance Resource.
 
-#### 45.2.2.2 MHD Document Consumer Integration 
+#### 1:45.2.2.2 MHD Document Consumer Integration 
 
 The support of this option enables a Data Element Provenance Consumer to
 access the referenced source documents managed by the MHD Document
@@ -485,7 +485,7 @@ these weaknesses of the data element granularity by allowing the user
 that retrieves a query list to easily request the document(s) that are
 sources of the data element(s) of interest.
 
-## 45.6 mXDE Cross Profile Considerations <a name="other-grouping"> </a>
+## 1:45.6 mXDE Cross Profile Considerations <a name="other-grouping"> </a>
 
 **ITI PIX - Patient Identity Cross Referencing and ITI PDQ - Patient Demographics Query**
 
@@ -495,7 +495,7 @@ or with a Patient Demographics Consumer in the PDQ, PDQV3, or PDQm
 Profiles to resolve patient identifiers prior to submitting QEDm, XDS or
 MHD queries.
 
-## 45.7 Deployment Models <a name="deployment-models"> </a>
+## 1:45.7 Deployment Models <a name="deployment-models"> </a>
 
 For the implementation of the mXDE Profile, a number of actors that
 generally are considered as part of a health information sharing
