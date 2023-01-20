@@ -54,7 +54,7 @@ resources:
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate
   index.md:
-    title: mXDE Home
+    title: Mobile Cross-Enterprise Document Data Element Extraction (mXDE
     generation: markdown
   volume-1.md:
     title: 1:45 Mobile Cross-Enterprise Document Data Element Extraction (mXDE)
