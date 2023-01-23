@@ -28,12 +28,10 @@ This guide is organized into the following sections:
 2. Volume 2: Transactions
    1. [Retrieve Document Set \[ITI-43\]](ITI-43.html)
 
-3. Test Plan
-  - [Test Plan](testplan.html)
-    - **TODO: point to your appendix if you have them**
-	
+3. [Test Plan](testplan.html)
+
 4. Other
-  - [Changes to Other Profiles](other.html)
+  - [Changes to Other Documents](other.html)
     - **TODO: Actor and transaction definitions, new glossary terms.**
     - **TODO: Any changes needed to other specifications.**
 
