@@ -194,7 +194,6 @@ between options when applicable are specified in notes.
 </tr>
 <tr class="odd">
 <td rowspan="2">Data Element Provenance Consumer</td>
-<td>Required</td>
 <td>XDS Document Consumer Integration (Note 2)</td>
 <td>Section 1:45.2.2.1</td>
 </tr>
