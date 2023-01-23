@@ -1,11 +1,12 @@
-Editor: Please update Volume 2, Sections 3.43, 3.43.1 and 3.43.2 as follows.
+|------------------------------------------------------------|
+| Editor: Please update Volume 2, Sections 3.43, 3.43.1 and 3.43.2 as follows. |
 {:.grid .bg-info}
 
 This section corresponds to transaction \[ITI-43\] of the IHE Technical
 Framework. The Document Consumer, Document Repository and Initiating
 Gateway Actors use transaction \[ITI-43\].
 
-| Integration Profiles using this Transaction                                |
+| Integration Profiles Using This Transaction                                |
 |----------------------------------------------------------------------------|
 | Cross-Enterprise Document Sharing-b (XDS.b)                                |
 | Cross-Community Access (XCA)                                               |
@@ -68,7 +69,8 @@ the Document Consumer does. In this transaction, the requirements for
 the Data Element Extractor are identical to those for the Document
 Consumer.</u>**
 
-Editor: Please update Figure 3.43.4-1 Interaction Diagram as follows.
+|----------------------------------------------|
+| Editor: Please update Figure 3.43.4-1 Interaction Diagram as follows.|
 {:.grid .bg-info}
 
 **TO DO: Add Interaction Diagram**
