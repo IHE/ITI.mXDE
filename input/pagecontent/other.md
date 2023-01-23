@@ -10,7 +10,8 @@ This section modifies other IHE profiles or the General Introduction appendices 
 
 | Actor                         | Definition                                                                                |
 | ----------------------------- | ------------------------------------------------------------------------------------------|
-| none |  |
+|Date Element Extractor | The Data Element Extractor extracts data elements from documents along with the associated provenance information that traces back to the source document. |
+|Data Element Provenance Consumer | The Data Element Provenance Consumer uses the provenance information associated with data elements to access the source information. |
 {:.grid .table-striped}
 
 
