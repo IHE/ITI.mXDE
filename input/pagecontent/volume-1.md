@@ -173,6 +173,39 @@ Options that may be selected for each actor in this implementation guide, if any
 between options when applicable are specified in notes.
 
 **Table 1:45.2-1**
+
+<table border="1" borderspacing="0" style='border: 1px solid black; border-collapse: collapse'>
+<thead>
+<tr class="header">
+<th>Actor</th>
+<th>Option Name</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="2">Data Element Extractor</td>
+<td>XDS Document Registry Integration (Note 1)</td>
+<td>Section 1:45.2.1.1</td>
+</tr>
+<tr class="even">
+<td>MHD Document Responder Integration (Note 1)</td>
+<td>Section 1:45.2.1.2</td>
+</tr>
+<tr class="odd">
+<td rowspan="2">Data Element Provenance Consumer</td>
+<td>Required</td>
+<td>XDS Document Consumer Integration (Note 2)</td>
+<td>Section 1:45.2.2.1</td>
+</tr>
+<tr class="even">
+<td>MHD Document Consumer Integration (Note 2)</td>
+<td>Section 1:45.2.2.2</td>
+</tr>
+</tbody>
+</table>
+
+
 | Actor                            | Option Name                                 | Reference          |
 |----------------------------------|---------------------------------------------|--------------------|
 | Data Element Extractor           | XDS Document Registry Integration (Note 1)  | Section 1:45.2.1.1 |
