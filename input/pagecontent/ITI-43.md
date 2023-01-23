@@ -1,5 +1,6 @@
+
 |------------------------------------------------------------|
-| Editor: Please update Volume 2, Sections 3.43, 3.43.1 and 3.43.2 as follows. |
+| Editor: Please update Volume 2, Sections 3.43, 3.43.1 and 3.43.2 as follows.|
 {:.grid .bg-info}
 
 This section corresponds to transaction \[ITI-43\] of the IHE Technical
