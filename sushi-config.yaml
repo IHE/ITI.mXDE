@@ -71,17 +71,19 @@ pages:
   other.md:
     title: Changes to Other Documents
     generation: markdown
+    title: Downloads
+    generation: markdown
     
 menu:
   mXDE Home: index.html
   Volume 1:
     Introduction: volume-1.html
-    Actors and Transactions: volume-1.html1451-#actors-and-transactions
-    Actor Options: volume-1.html#1452-actor-options
-    Required Groupings: volume-1.html#1453-required-groupings
-    Overview: volume-1.html#1454-overview
-    Security Considerations: volume-1.html#1454-security-considerations
-    Cross-Profile Considerations: volume-1.html#1456-other-grouping
+    Actors and Transactions: volume-1.html#1451-mxde-actors-transactions-and-content-modules
+    Actor Options: volume-1.html#1452-mxde-actor-options
+    Required Actor Groupings: volume-1.html#1453-mxde-required-actor-groupings
+    Overview: volume-1.html#1454-mxde-overview
+    Security Considerations: volume-1.html#1455-mxde-security-considerations
+    Cross-Profile Considerations: volume-1.html#1456-mxde-cross-profile-considerations
     Deployment Models: volume-1.html#1457-deployment-models
   Volume 2:
     "Retrieve Document Set [ITI-43]": ITI-43.html
