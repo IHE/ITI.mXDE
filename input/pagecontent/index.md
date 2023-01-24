@@ -17,13 +17,13 @@ This guide is organized into the following sections:
 
 1. Volume 1: Profiles
    1. [Introduction](volume-1.html)
-   1. [Actors and Transactions](volume-1.html#actors-and-transactions)
-   1. [Actor Options](volume-1.html#actor-options)
-   1. [Actor Required Groupings](volume-1.html#required-groupings)
-   1. [Overview](volume-1.html#overview)
-   1. [Security Considerations](volume-1.html#security-considerations)
-   1. [Cross Profile Considerations](volume-1.html#other-grouping)
-   1. [Deployment Models](volume-1.html#deployment-models)
+   1. [Actors and Transactions](volume-1.html#1451-mxde-actors-transactions-and-content-modules)
+   1. [Actor Options](volume-1.html#1452-mxde-actor-options)
+   1. [Actor Required Groupings](volume-1.html#1453-mxde-required-actor-groupings)
+   1. [Overview](volume-1.html#1454-mxde-overview)
+   1. [Security Considerations](volume-1.html#1455-mxde-security-considerations)
+   1. [Cross Profile Considerations](volume-1.html#1456-mxde-cross-profile-considerations)
+   1. [Deployment Models](volume-1.html#1457-deployment-models)
 
 2. Volume 2: Transactions
    1. [Retrieve Document Set \[ITI-43\]](ITI-43.html)
@@ -32,11 +32,10 @@ This guide is organized into the following sections:
 
 4. Other
   - [Changes to Other Documents](other.html)
-    - **TODO: Actor and transaction definitions, new glossary terms.**
-    - **TODO: Any changes needed to other specifications.**
+  - [Downloads](downloads.html)
 
 Click on any of the links above, navigate the contents using the [Table of Contents](toc.html) or,
-if you are looking for a specific artifact, check out the index of [Artifacts](artifacts.html).
+if you are looking for a specific artifact, see the index of [Artifacts](artifacts.html).
 
 ### Conformance Expectations
 
@@ -49,13 +48,3 @@ The use of ```mustSupport``` in StructureDefinition profiles equivalent to the I
 mustSupport of true - only has a meaning on items that are minimal cardinality of zero (0), and applies only to the source actor populating the data. The source actor shall populate the elements marked with MustSupport, if the concept is supported by the actor, a value exists, and security and consent rules permit. 
 The consuming actors should handle these elements being populated or being absent/empty. 
 Note that sometimes mustSupport will appear on elements with a minimal cardinality greater than zero (0), this is due to inheritance from a less constrained profile.
-
-### Download 
-
-You can also download:
-
-- [this entire guide](full-ig.zip),
-- the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
-- the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
-
-The source code for this Implementation Guide can be found on [IHE GitHub](https://github.com/IHE/ITI.mXDE).
