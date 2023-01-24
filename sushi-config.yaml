@@ -71,7 +71,8 @@ pages:
   other.md:
     title: Changes to Other Documents
     generation: markdown
-    title: Downloads
+  downloads.md:
+    title: Downloads and Analysis
     generation: markdown
     
 menu:
