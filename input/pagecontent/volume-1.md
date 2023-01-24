@@ -93,7 +93,7 @@ XDS and QEDm IHE Profiles.
 
 This profile supports a variety of deployment models. Two of those are discussed in Section 1:45.7
 
-## 1:45.1 mXDE Actors, Transactions, and Content Modules <a name="actors-and-transactions"> </a>
+## 1:45.1 mXDE Actors, Transactions, and Content Modules
 
 This section defines the actors, transactions, and/or content modules in
 this implementation guide. Further information about actor and transaction definitions can be found in the IHE Technical Frameworks General Introduction [Appendix A: Actors](https://profiles.ihe.net/GeneralIntro/ch-A.html) and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
@@ -167,7 +167,7 @@ The Data Element Provenance Consumer:
 
    - a grouped MHD Document Consumer.
 
-## 1:45.2 mXDE Actor Options <a name="actor-options"> </a>
+## 1:45.2 mXDE Actor Options
 
 Options that may be selected for each actor in this implementation guide, if any, are listed in Table 1:45.2-1 below. Dependencies 
 between options when applicable are specified in notes.
@@ -204,16 +204,9 @@ between options when applicable are specified in notes.
 </tbody>
 </table>
 
+*Note 1: The actor shall implement at least one of the options XDS Document Registry Integration or MHD Document Responder Integration*
 
-| Actor                            | Option Name                                 | Reference          |
-|----------------------------------|---------------------------------------------|--------------------|
-| Data Element Extractor           | XDS Document Registry Integration (Note 1)  | Section 1:45.2.1.1 |
-|                                  | MHD Document Responder Integration (Note 1) | Section 1:45.2.1.2 |
-| Data Element Provenance Consumer | XDS Document Consumer Integration (Note 2)  | Section 1:45.2.2.1 |
-|                                  | MHD Document Consumer Integration (Note 2)  | Section 1:45.2.2.2 |
-{:.grid .table-striped}
-*Note 1: The actor shall implement at least one of the options XDS Document Registry Integration or MHD Document Responder Integration
-*Note 2: The actor shall implement at least one of the options XDS Document Consumer Integration or MHD Document Consumer Integration.
+*Note 2: The actor shall implement at least one of the options XDS Document Consumer Integration or MHD Document Consumer Integration.*
 
 ### 1:45.2.1 Data Element Extractor Actor Options
 
@@ -271,7 +264,7 @@ The Data Element Provenance Consume that supports this option:
 
 - shall be grouped with an MHD Document Consumer and thus be capable of accessing the documents referenced by any Provenance Resource.
 
-## 1:45.3 mXDE Required Actor Groupings <a name="required-groupings"> </a>
+## 1:45.3 mXDE Required Actor Groupings
 
 An actor from this profile (Column 1) shall implement all required
 transactions for the grouped actor (Column 3) in the Required Actor
@@ -338,13 +331,14 @@ Option</td>
 </table>
 
 *Note 1: Currently in the PCC QEDm Trial Implementation Supplement*
+
 *Note 2: Currently in the MHD Trial Implementation Supplement*
 
 Section 1:45.5 describes some optional groupings that may be of interest
 for security considerations and Section 1:45.6 describes some optional
 groupings in other related profiles.
 
-## 1:45.4 mXDE Overview <a name="overview"> </a>
+## 1:45.4 mXDE Overview
 
 ### 1:45.4.1 Concepts
 
@@ -378,38 +372,17 @@ hospital for the intended surgery. He also picks up his prescribed
 medication at the local pharmacy which results in the pharmacy sharing a
 Pharmacy Dispensation document.
 
-Back at home, the patient uses his smart phone to:
+1. Back at home, the patient uses his smart phone to access the recent prescription and recently dispensed medications to review the dosage and timing for his medication. For this, the prescription information is accessed by the patient portal app on his smartphone. However, the patient’s condition worsens, resulting in an emergency hospitalization.
 
-1. Access the recent prescription and recently dispensed medications to review the dosage and timing for his medication. For this, the prescription information is accessed by the patient portal app on his smartphone.
+2. At the emergency department, the emergency physician urgently needs to stabilize the patient and seeks to obtain his current medication list (the medications prescribed and dispensed need to be extracted from at least two documents).
 
-However, the patient’s condition worsens, resulting in an emergency
-hospitalization.
+3. The emergency physician decides to complete the patient admission and to schedule the intended surgery. For this, he retrieves the Transfer of Care document.
 
-At the emergency department, the emergency physician:
+4. At the surgery department the anesthesiologist, while preparing for the surgery, obtains the history of prescribed and dispensed medications and the list of known allergies (the allergies need to be extracted for the past ten years from all shared documents for the patient). At the conclusion of the hospital stay, the attending physician and other health professionals create and share the Discharge Summary document.
 
-2. Urgently needs to stabilize the patient and seeks to obtain his current medication list (the medications prescribed and dispensed need to be extracted from at least two documents).
+5. Back at home, the patient wants to review the Discharge Summary associated with his surgery. He opens the patient portal app on his smart phone, through which he:Queries the Document Registry to list the recent documents shared for him and retrieves the selected Discharge Summary. The patient can read the recommendations on discharge and the new pharmacy prescription including related dosage. Based on this information, he decides to consult the family physician again for clarification.
 
-3. Decides to complete the patient admission and to schedule the intended surgery. For this, he retrieves the Transfer of Care document.
-
-At the surgery department, the anesthesiologist:
-
-4. While preparing for the surgery, obtains the history of prescribed and dispensed medications and the list of known allergies (the allergies need to be extracted for the past 10 years from all shared documents for the patient).
-
-At the conclusion of the hospital stay, the attending physician and
-other health professionals create and share the Discharge Summary
-document.
-
-Back at home, the patient wants to review the Discharge Summary
-associated with his surgery. He opens the patient portal app on his
-smart phone, through which he:
-
-5. Queries the Document Registry to list the recent documents shared for him and retrieves the selected Discharge Summary. The patient can read the recommendations on discharge and the new pharmacy prescription including related dosage. Based on this information, he decides to consult the family physician again for clarification.
-
-Later, in order to better evaluate the results, the family physician
-needs to check the improvements of patient health. The family physician
-uses his tablet to:
-
-6. Query and access all the patient’s vital signs and medications (directly as fine-grained data elements) with related provenance information.
+6. Later, in order to better evaluate the results, the family physician needs to check the improvements of patient health. The family physician uses his tablet to query and access all the patient’s vital signs and medications (directly as fine-grained data elements) with related provenance information.
 
 7. In order to reconstruct the patient’s history about the cured pathology, each time he finds relevant changes in the patient’s history, he uses the provenance information to identify any original document and eventually retrieves it. The document in which the original data was initially shared makes him understand the context at that time (other findings, observations, etc.) to better evaluate the meaning of fine-grained information. This analysis helps the family physician to improve the care plan for the patient.
 
@@ -431,7 +404,7 @@ Note: “Data Element” is abbreviated “DE” in the diagram below.
 </div>
 **Figure 1:45.4.2.1.2-1: Basic Process Flow in mXDE Profile**
 
-## 1:45.5 mXDE Security Considerations <a name="security-connsiderations"> </a>
+## 1:45.5 mXDE Security Considerations
 
 See ITI TF-2x: [Appendix Z.8 “Mobile Security Considerations”](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations)
 
@@ -517,7 +490,7 @@ these weaknesses of the data element granularity by allowing the user
 that retrieves a query list to easily request the document(s) that are
 sources of the data element(s) of interest.
 
-## 1:45.6 mXDE Cross Profile Considerations <a name="other-grouping"> </a>
+## 1:45.6 mXDE Cross Profile Considerations
 
 **ITI PIX - Patient Identity Cross Referencing and ITI PDQ - Patient Demographics Query**
 
@@ -527,7 +500,7 @@ or with a Patient Demographics Consumer in the PDQ, PDQV3, or PDQm
 Profiles to resolve patient identifiers prior to submitting QEDm, XDS or
 MHD queries.
 
-## 1:45.7 Deployment Models <a name="deployment-models"> </a>
+## 1:45.7 Deployment Models
 
 For the implementation of the mXDE Profile, a number of actors that
 generally are considered as part of a health information sharing
@@ -540,7 +513,7 @@ defined by the mXDE transactions is the same.
 
 Here are the main data flows described for each model:
 
-1. Providing documents
+1. Providing documents.
 
 2. Accessing data element content and if desired one or more of the documents from which a data element was extracted. This access uses the document references conveyed in a Provenance Resource associated with the data element.
 
