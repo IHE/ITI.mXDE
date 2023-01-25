@@ -172,7 +172,7 @@ The Data Element Provenance Consumer:
 Options that may be selected for each actor in this implementation guide, if any, are listed in Table 1:45.2-1 below. Dependencies 
 between options when applicable are specified in notes.
 
-**Table 1:45.2-1**
+**Table 1:45.2-1: mXDE - Actors and Options**
 
 <table border="1" borderspacing="0" style='border: 1px solid black; border-collapse: collapse'>
 <thead>
