@@ -22,7 +22,7 @@ None
 The need to introduce an actor grouping option where an XDS Document Consumer is grouped with the Data Element Extractor to gain access to documents content and extract data elements along with creation of Provenance Resources has been considered (see diagram).
 
 <div>
-<img alt="Issue 103 Diagram" src="issue_mXDE_103.png" width="100%">
+<img alt="Issue 103 Diagram" src="issue_mXDE_103.png" width="50%">
 </div>
 
 Given the “pull” behavior of the XDS Document Consumer and the need to limit the update delays for the Data Element Extractor, it has been considered that the introduction of such an option needs further study. Feedback from implementers during Trail Implementation may result in input to address the architectural challenges of such a grouping.
