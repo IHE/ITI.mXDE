@@ -19,7 +19,11 @@ None
 
 **mXDE_103: Integration of a document sharing environment where an XDS Document Consumer is grouped with a Data Element Extractor.**
 
-The need to introduce an actor grouping option where an XDS Document Consumer is grouped with the Data Element Extractor to gain access to documents content and extract data elements along with creation of Provenance Resources has been considered (See diagram).
+The need to introduce an actor grouping option where an XDS Document Consumer is grouped with the Data Element Extractor to gain access to documents content and extract data elements along with creation of Provenance Resources has been considered (see diagram).
+
+<div>
+<img alt="Issue 103 Diagram" src="issue_mXDE_103.png" width="100%">
+</div>
 
 Given the “pull” behavior of the XDS Document Consumer and the need to limit the update delays for the Data Element Extractor, it has been considered that the introduction of such an option needs further study. Feedback from implementers during Trail Implementation may result in input to address the architectural challenges of such a grouping.
 
@@ -80,8 +84,8 @@ The profile provides a controlled approach to access the same health information
 The relationship between these two levels results in a number of situations that could result in “defects in information integrity and/or credibility in the information being accessed. The following points should be discussed in the profile:
 
 1. Different forms of mappings may have to be performed. Although it is beyond the scope of the mXDE Profile to specify such mapping between data elements in documents and fine-grained data elements accessed directly, it is important that implementers note that:
-   a. Such mappings may not be perfect (typical limitations in semantic mappings).
-   b. Some information contained in the documents may not be “expressed” as data elements (e.g., textual elements) and be “lost” in the data element queries vs the documents.
+   1. Such mappings may not be perfect (typical limitations in semantic mappings).
+   2. Some information contained in the documents may not be “expressed” as data elements (e.g., textual elements) and be “lost” in the data element queries vs the documents.
 
 &rarr; **Resolution:** The profile will provide a good discussion on the above issues and “guidance” on the profile to help implementers of the profile.
 
