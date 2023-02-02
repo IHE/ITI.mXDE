@@ -1,12 +1,12 @@
 
-## Significant Changes:
+## Significant Changes
 
 ### Significant changes from Revison 1.2 (PDF)
 - Converted to an IG, no content updates
 
 ## Issues
 
-### Issue Submission
+### Submit an Issue
 
 IHE welcomes [New Issues](https://github.com/IHE/ITI.mXDE/issues/new/choose) from the GitHub community. 
 For those without GitHub access, issues may be submitted to the [ITI Public Comment form](https://www.ihe.net/ITI_Public_Comments/).
