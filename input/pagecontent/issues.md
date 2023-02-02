@@ -17,9 +17,13 @@ It is important to note that as soon as a Change Proposal is approved, it carrie
 
 ### Open Issues
 
-None
+These issues were known as part of the publication and IHE invites comments.
+
+- None
 
 ### Closed Issues
+
+These issues have been resolved and documented in the publication.
 
 **mmXDE-102: Should other Deployment Models be considered besides the two described in Section 45.7, if any?**
 
