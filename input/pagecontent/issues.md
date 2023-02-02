@@ -1,4 +1,12 @@
-### Issues
+
+## Significant Changes:
+
+### Significant changes from Revison 1.2 (PDF)
+- Converted to an IG, no content updates
+
+## Issues
+
+### Issue Submission
 
 IHE welcomes [New Issues](https://github.com/IHE/ITI.mXDE/issues/new/choose) from the GitHub community. 
 For those without GitHub access, issues may be submitted to the [ITI Public Comment form](https://www.ihe.net/ITI_Public_Comments/).
@@ -7,11 +15,11 @@ As issues are submitted they will be managed on the [QEDm GitHub Issues](https:/
 It is important to note that as soon as a Change Proposal is approved, it carries the same weight as a published Implementation Guide (i.e., it is testable at an [IHE Connectathon](https://www.ihe.net/participate/connectathon/) from the time it is approved, even if it will not be integrated until several months later).
 
 
-#### Open Issues
+### Open Issues
 
 None
 
-#### Closed Issues
+### Closed Issues
 
 **mmXDE-102: Should other Deployment Models be considered besides the two described in Section 45.7, if any?**
 
