@@ -5,7 +5,7 @@ You can also download:
 * the definition resources in [json](definitions.json.zip), or [xml](definitions.xml.zip) format, or
 * the example resources in [json](examples.json.zip), or [xml](examples.xml.zip) format.
 
-The source code for this Implementation Guide can be found at https://github.com/IHE/ITI.mXDE.
+The source code for this Implementation Guide can be found at [https://github.com/IHE/ITI.mXDE](https://github.com/IHE/ITI.mXDE).
 
 #### Cross Version Analysis
 
