@@ -69,7 +69,7 @@ pages:
     title: Significant Changes & Issues
     generation: markdown
   other.md:
-    title: Changes to Other Documents
+    title: Changes to Other IHE Specifications
     generation: markdown
   downloads.md:
     title: Downloads and Analysis
@@ -88,9 +88,9 @@ menu:
     Deployment Models: volume-1.html#1457-deployment-models
   Volume 2:
     "Retrieve Document Set [ITI-43]": ITI-43.html
-  Test Plan: testplan.html
   Artifacts: artifacts.html
   Other:
-    Changes to Other Documents: other.html
-    Downloads: downloads.html
+    Test Plan: testplan.html
+    Changes to Other IHE Specifications: other.html
+    Downloads and Analysis: downloads.html
     
