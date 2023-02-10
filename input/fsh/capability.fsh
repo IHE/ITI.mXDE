@@ -1,169 +1,80 @@
-Instance: IHE.FooBar.client
+Instance: IHE.mXDE.DataElementProvenanceConsumer
 InstanceOf: CapabilityStatement
+Title: "mXDE Data Element Provenance Consumer Actor"
 Usage: #definition
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Client Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/TF/Volume1/ch-38.html\">FooBar</a>\r\n\t\tThe IHE Profile text is Normative, this conformance resource is Informative.</div>"
-* url = "http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.FooBar.client"
-* name = "IHE_FooBar_client"
-* title = "IHE FooBar client"
-* status = #active
-* experimental = false
-* date = "2018-04-13"
-* publisher = "Integrating the Healthcare Enterprise (IHE)"
-* contact[0].name = "IHE"
-* contact[=].telecom.system = #url
-* contact[=].telecom.value = "http://ihe.net"
-* contact[+].name = "John Moehrke"
-* contact[=].telecom.system = #email
-* contact[=].telecom.value = "JohnMoehrke@gmail.com"
-* description = "CapabilityStatement for Client Actor in the IHE IT Infrastructure Technical Framework Supplement IHE FooBar. See https://profiles.ihe.net/ITI/TF/Volume1/ch-38.html. The IHE Profile text is Normative, this conformance resource is Informative."
-* copyright = "IHE http://www.ihe.net/Governance/#Intellectual_Property"
-* kind = #requirements
-* fhirVersion = #4.0.1
-* format[0] = #application/fhir+xml
-* format[+] = #application/fhir+json
-* rest.mode = #client
-* rest.documentation = "FooBar client will query for Patient resources matching a sub-set of the FHIR core Patient resource query parameters"
-* rest.security.cors = false
-* rest.security.description = "None mandated by IHE, encouraged IHE-IUA or SMART-on-FHIR"
-* rest.resource.type = #Patient
-* rest.resource.interaction[0].code = #read
-* rest.resource.interaction[+].code = #search-type
-* rest.resource.searchParam[0].name = "_id"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-_id"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "Logical id of this artifact"
-* rest.resource.searchParam[+].name = "active"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-active"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "Whether the patient record is active"
-* rest.resource.searchParam[+].name = "address-city"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-address-city"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A city specified in an address"
-* rest.resource.searchParam[+].name = "address-country"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-address-country"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A country specified in an address"
-* rest.resource.searchParam[+].name = "address-postalcode"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-address-postalcode"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A postalCode specified in an address"
-* rest.resource.searchParam[+].name = "address-state"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-address-state"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A state specified in an address"
-* rest.resource.searchParam[+].name = "birthdate"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-birthdate"
-* rest.resource.searchParam[=].type = #date
-* rest.resource.searchParam[=].documentation = "The patient's date of birth"
-* rest.resource.searchParam[+].name = "family"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-family"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A portion of the family name of the patient"
-* rest.resource.searchParam[+].name = "gender"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-gender"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "Gender of the patient"
-* rest.resource.searchParam[+].name = "given"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-given"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A portion of the given name of the patient"
-* rest.resource.searchParam[+].name = "identifier"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-identifier"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "A patient identifier"
-* rest.resource.searchParam[+].name = "telecom"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-telecom"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "The value in any kind of telecom details of the patient"
-* rest.resource.searchParam[+].name = "_lastUpdated"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-_lastUpdated"
-* rest.resource.searchParam[=].type = #date
-* rest.resource.searchParam[=].documentation = "When the resource version last changed"
-* rest.interaction.code = #search-system
+Description: """
+CapabilityStatement for mXDE Data Element Provenance Consumer Actor
 
-Instance: IHE.FooBar.server
-InstanceOf: CapabilityStatement
-Usage: #definition
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\nCapabilityStatement for SERVER Actor in the IHE\r\n<a href=\"https://profiles.ihe.net/ITI/TF/Volume1/ch-38.html\">FooBar</a>.\r\nThe IHE Profile text is Normative, this conformance resource is Informative.</div>"
-* url = "http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.FooBar.server"
-* name = "IHE_FooBar_supplier"
-* title = "IHE FooBar Server"
+Accesses documents to extract data elements and create the links to the data elements' source documents.
+"""
+* description = """
+CapabilityStatement for mXDE Data Element Provenance Consumer
+"""
+* url = "https://profiles.ihe.net/ITI/mXDE/CapabilityStatement/IHE.mXDE.DataElementProvenanceConsumer"
+* name = "IHE_mXDE_DataElementProvenanceConsumer"
+* title = "mXDE Data Element Provenance Consumer Actor"
 * status = #active
 * experimental = false
-* date = "2019-07-05"
-* publisher = "Integrating the Healthcare Enterprise (IHE)"
-* contact[0].name = "IHE"
-* contact[=].telecom.system = #url
-* contact[=].telecom.value = "http://ihe.net"
-* contact[+].name = "John Moehrke"
-* contact[=].telecom.system = #email
-* contact[=].telecom.value = "JohnMoehrke@gmail.com"
-* description = "CapabilityStatement for Server Actor in the IHE IT Infrastructure Technical Framework Supplement IHE FooBar. See https://profiles.ihe.net/ITI/TF/Volume1/ch-38.html. The IHE Profile text is Normative, this conformance resource is Informative."
-* copyright = "IHE http://www.ihe.net/Governance/#Intellectual_Property"
+* date = "2023-02-10"
 * kind = #requirements
 * fhirVersion = #4.0.1
-* format[0] = #application/fhir+xml
+* format[+] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* rest.mode = #server
-* rest.documentation = "FooBar server provides capability to query for Patient resources matching a sub-set of the FHIR core Patient resource query parameters"
-* rest.security.cors = false
-* rest.security.description = "None mandated by IHE, encouraged IHE-IUA or SMART-on-FHIR"
-* rest.resource.type = #Patient
-* rest.resource.interaction[0].code = #read
-* rest.resource.interaction[+].code = #search-type
-* rest.resource.searchParam[0].name = "_id"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-_id"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "Logical id of this artifact"
-* rest.resource.searchParam[+].name = "active"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-active"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "Whether the patient record is active"
-* rest.resource.searchParam[+].name = "address-city"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-address-city"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A city specified in an address"
-* rest.resource.searchParam[+].name = "address-country"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-address-country"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A country specified in an address"
-* rest.resource.searchParam[+].name = "address-postalcode"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-address-postalcode"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A postalCode specified in an address"
-* rest.resource.searchParam[+].name = "address-state"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-address-state"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A state specified in an address"
-* rest.resource.searchParam[+].name = "birthdate"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-birthdate"
-* rest.resource.searchParam[=].type = #date
-* rest.resource.searchParam[=].documentation = "The patient's date of birth"
-* rest.resource.searchParam[+].name = "family"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-family"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A portion of the family name of the patient"
-* rest.resource.searchParam[+].name = "gender"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-gender"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "Gender of the patient"
-* rest.resource.searchParam[+].name = "given"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-given"
-* rest.resource.searchParam[=].type = #string
-* rest.resource.searchParam[=].documentation = "A portion of the given name of the patient"
-* rest.resource.searchParam[+].name = "identifier"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-identifier"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "A patient identifier"
-* rest.resource.searchParam[+].name = "telecom"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-telecom"
-* rest.resource.searchParam[=].type = #token
-* rest.resource.searchParam[=].documentation = "The value in any kind of telecom details of the patient"
-* rest.resource.searchParam[+].name = "_lastUpdated"
-//* rest.resource.searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-_lastUpdated"
-* rest.resource.searchParam[=].type = #date
-* rest.resource.searchParam[=].documentation = "When the resource version last changed"
-* rest.interaction.code = #search-system
+* imports[+] = "https://profiles.ihe.net/ITI/MHD/CapabilityStatement/IHE.MHD.DocumentConsumer"
+* imports[+] = "https://profiles.ihe.net/ITI/PMIR/CapabilityStatement/IHE.PMIR.PatientIdentityConsumer"
+* imports[+] = "https://profiles.ihe.net/ITI/SVCM/CapabilityStatement/IHE.SVCM.TerminologyConsumer"
+* imports[+] = "https://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer"
+* rest
+  * mode = #client
+  * documentation = "mXDE Data Element Provenance Consumer Actor"
+  * security
+    * description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
+  * resource[+]
+    * type = #Provenance
+    * documentation = "record"
+    * supportedProfile[+] = "https://profiles.ihe.net/ITI/mXDE/IHE.ITI.mXDE.Provenance"
+    * interaction[+].code = #search-type
+    * interaction[+].code = #read
+    * interaction[+].code = #create
+    * interaction[+].code = #update
+
+
+Instance: IHE.mXDE.DataElementExtractor
+InstanceOf: CapabilityStatement
+Title: "mXDE Data Element Extractor Actor"
+Usage: #definition
+Description: """
+CapabilityStatement for mXDE Data Element Extractor Actor
+
+Uses the provided links from data elements to source documents to obtain broader clinical context in which the data elements were recorded.
+"""
+* description = """
+CapabilityStatement for mXDE Data Element Extracor
+"""
+* url = "https://profiles.ihe.net/ITI/mXDE/CapabilityStatement/IHE.mXDE.DataElementExtractor"
+* name = "IHE_mXDE_DataElementExtractor"
+* title = "mXDE Data Element Extractor Actor"
+* status = #active
+* experimental = false
+* date = "2023-02-10"
+* kind = #requirements
+* fhirVersion = #4.0.1
+* format[+] = #application/fhir+xml
+* format[+] = #application/fhir+json
+* imports[+] = "https://profiles.ihe.net/ITI/MHD/CapabilityStatement/IHE.MHD.DocumentConsumer"
+* imports[+] = "https://profiles.ihe.net/ITI/PMIR/CapabilityStatement/IHE.PMIR.PatientIdentityConsumer"
+* imports[+] = "https://profiles.ihe.net/ITI/SVCM/CapabilityStatement/IHE.SVCM.TerminologyConsumer"
+* imports[+] = "https://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer"
+* rest
+  * mode = #client
+  * documentation = "mXDE Data Element Extractor Actor"
+  * security
+    * description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
+  * resource[+]
+    * type = #Provenance
+    * documentation = "record"
+    * supportedProfile[+] = "https://profiles.ihe.net/ITI/mXDE/IHE.ITI.mXDE.Provenance"
+    * interaction[+].code = #search-type
+    * interaction[+].code = #read
+    * interaction[+].code = #create
+    * interaction[+].code = #update

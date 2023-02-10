@@ -1,9 +1,8 @@
 Instance:   ex-weight
-InstanceOf: IHE.FooBar.bodyWeight
-Title: "Example of an FooBar bodyWeight R4 observation"
+InstanceOf: Observation
+Title: "Example of an bodyWeight R4 observation"
 Description: """
 Sample for demonstration purposes of a common weight Observation
-- marked as compliant with IHE.FooBar.bodyWeight profile
 - marked as test data
 - status of final
 - category vital-signs
@@ -48,7 +47,7 @@ Sample for demonstration purposes of a common weight Observation.
 * code.coding[2] = SCT#27113001
 //* code.coding[3] = http://acme.org/devices/clinical-codes#body-weight "Body Weight"
 * subject = Reference(Patient/ex-patient)
-* encounter = Reference(Encounter/example)
+* encounter = Reference(Encounter/ex-encounter)
 * effectiveDateTime = 2016-03-28
 * valueQuantity = 20 '[stone_av]' 
 * note.text = "a bit heavy, about 280 lbs"

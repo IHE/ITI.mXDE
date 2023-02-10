@@ -143,29 +143,23 @@ Most requirements are documented in ITI TF-2: Transactions. This section documen
 
 #### 1:45:1.1.1 Data Element Extractor
 
+Defined in [Data Element Extractor](CapabilityStatement-IHE.mXDE.DataElementExtractor.html) requirements CapabilityStatement:
+
 - Shall access documents, through:
-
-   - a grouped XDS Document Registry and the Retrieve Document Set \[ITI-43\] transaction, or
-
-   - a grouped MHD Document Responder.
-
+- a grouped XDS Document Registry and the Retrieve Document Set \[ITI-43\] transaction, or
+  - a grouped MHD Document Responder.
 - Shall extract the data element information from the retrieved documents
-
 - Shall obtain the provenance information and create an HL7 FHIR Provenance Resource associated with extracted data elements (see PCC QEDm Trial Implementation Supplement, Volume 2, Section 3.44.4.2.2.1 “Resource Specific Contents”).
-
 - Shall make the Provenance Resource available to the grouped PCC QEDm Clinical Data Source using the Document Provenance Option. This allows provenance information to be returned in its query responses along with the extracted data elements.
 
 #### 1:45.1.1.2 Data Element Provenance Consumer
 
-The Data Element Provenance Consumer:
+Definition in [Data Element Provenance Consumer](CapabilityStatement-IHE.mXDE.DataElementProvenanceConsumer.html) requirements CapabiliytStatement:
 
 - Shall be grouped with a QEDm Clinical Data Consumer using the Document Provenance Option. The Clinical Data Consumer retrieves data elements together with the provenance information through the Mobile Query Existing Data \[PCC-44\] transaction.
-
 - Shall be capable of using the provenance information returned in responses to access source documents through:
-
-   - a grouped XDS Document Consumer, or
-
-   - a grouped MHD Document Consumer.
+  - a grouped XDS Document Consumer, or
+  - a grouped MHD Document Consumer.
 
 ## 1:45.2 mXDE Actor Options
 

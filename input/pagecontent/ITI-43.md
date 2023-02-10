@@ -65,7 +65,7 @@ Source/Repository Actors can be used interchangeably.
 >
 > **<u>Role: Obtains documents.</u>**
 
-**<u>The Data Element Extractor obtains documents in the same manner as
+**<u>The [Data Element Extractor](CapabilityStatement-IHE.mXDE.DataElementExtractor.html) obtains documents in the same manner as
 the Document Consumer does. In this transaction, the requirements for
 the Data Element Extractor are identical to those for the Document
 Consumer.</u>**
