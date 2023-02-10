@@ -8,7 +8,7 @@ Provenance profile for use in mXDE when the data-elements (Resources pointed to 
 * modifierExtension 0..0
 * target ^short = "The FHIR Resource elements found in the Document"
 * policy 1..1
-* policy = "urn:ihe:iti:mxde:2017:document-provenance-policy"
+* policy = "urn:ihe:iti:mxde:2023:document-provenance-policy"
 * activity 1..1
 * activity = http://hl7.org/fhir/w3c-provenance-activity-type#Derivation
 * agent ^slicing.discriminator.type = #pattern
