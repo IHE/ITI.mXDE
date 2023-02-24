@@ -1,5 +1,5 @@
 
-This Mobiles Cross-Enterprose (mXDE) Profile provides the means to access data elements extracted from shared
+This Mobiles Cross-Enterprise (mXDE) Profile provides the means to access data elements extracted from shared
 structured documents. The profile enables the deployment of health data
 exchange infrastructures where fine-grained access to health data
 coexists and complements the sharing of coarse-grained documents and the
@@ -15,22 +15,17 @@ fine-grained data elements they contain.
 ### Organization of This Guide
 This guide is organized into the following sections:
 
-1. Volume 1: Profiles
-   1. [Introduction](volume-1.html)
-   1. [Actors and Transactions](volume-1.html#1451-mxde-actors-transactions-and-content-modules)
-   1. [Actor Options](volume-1.html#1452-mxde-actor-options)
-   1. [Actor Required Groupings](volume-1.html#1453-mxde-required-actor-groupings)
-   1. [Overview](volume-1.html#1454-mxde-overview)
-   1. [Security Considerations](volume-1.html#1455-mxde-security-considerations)
-   1. [Cross Profile Considerations](volume-1.html#1456-mxde-cross-profile-considerations)
-   1. [Deployment Models](volume-1.html#1457-deployment-models)
-
-2. Volume 2: Transactions
-   1. [Retrieve Document Set \[ITI-43\]](ITI-43.html)
-
-3. [Test Plan](testplan.html)
-
-4. Other
+- Volume 1: Profiles
+  - [Introduction](volume-1.html)
+  - [Actors and Transactions](volume-1.html#1451-mxde-actors-transactions-and-content-modules)
+  - [Actor Options](volume-1.html#1452-mxde-actor-options)
+  - [Actor Required Groupings](volume-1.html#1453-mxde-required-actor-groupings)
+  - [Overview](volume-1.html#1454-mxde-overview)
+  - [Security Considerations](volume-1.html#1455-mxde-security-considerations)
+  - [Cross Profile Considerations](volume-1.html#1456-mxde-cross-profile-considerations)
+  - [Deployment Models](volume-1.html#1457-deployment-models)
+- [Test Plan](testplan.html)
+- Other
   - [Changes to Other Documents](other.html)
   - [Downloads](downloads.html)
 
@@ -45,6 +40,6 @@ IHE uses the normative words: Shall, Should, and May according to [standards con
 
 The use of ```mustSupport``` in StructureDefinition profiles equivalent to the IHE use of **R2** as defined in [Appendix Z](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir).
 
-mustSupport of true - only has a meaning on items that are minimal cardinality of zero (0), and applies only to the source actor populating the data. The source actor shall populate the elements marked with MustSupport, if the concept is supported by the actor, a value exists, and security and consent rules permit. 
-The consuming actors should handle these elements being populated or being absent/empty. 
+mustSupport of true - only has a meaning on items that are minimal cardinality of zero (0), and applies only to the source actor populating the data. The source actor shall populate the elements marked with MustSupport, if the concept is supported by the actor, a value exists, and security and consent rules permit.
+The consuming actors should handle these elements being populated or being absent/empty.
 Note that sometimes mustSupport will appear on elements with a minimal cardinality greater than zero (0), this is due to inheritance from a less constrained profile.

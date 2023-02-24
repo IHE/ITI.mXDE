@@ -31,35 +31,20 @@ dependencies:
   ihe.iti.mhd: 
     id: iheitimhd
     uri: https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd
-    version: 4.2.0
+    version: current # 4.2.0
   ihe.iti.pdqm: 
     id: ihepdqm
     uri: https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm
-    version: 2.4.0
+    version: current # 2.4.0
   ihe.iti.pixm:
     id: iheitipixm
     uri: https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm
-    version: 3.0.2
-  ihe.iti.mcsd:
-    id: iheitimcsd
-    uri: https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd
-    version: 3.8.0
-  ihe.formatcode.fhir:
-    id: iheformatcodefhir
-    uri: https://profiles.ihe.net/fhir/ihe.formatcode.fhir/ImplementationGuide/ihe.formatcode.fhir
-    version: 1.1.0
+    version: current # 3.0.2
   ihe.iti.balp:
     id: iheitibasicaudit
     uri: https://profiles.ihe.net/ITI/BALP/ImplementationGuide/ihe.iti.balp
-    version: 1.1.1
-  ihe.iti.pmir:
-    id: iheitipmir
-    uri: https://profiles.ihe.net/ITI/PMIR/ImplementationGuide/ihe.iti.pmir
-    version: 1.5.0
-  ihe.iti.svcm:
-    id: iheitisvcm
-    uri: https://profiles.ihe.net/ITI/SVCM/ImplementationGuide/ihe.iti.svcm
-    version: 1.5.0
+    version: current # 1.1.1
+
 
 
 
@@ -94,9 +79,6 @@ pages:
   volume-1.md:
     title: 1:45 Mobile Cross-Enterprise Document Data Element Extraction (mXDE)
     generation: markdown
-  ITI-43.md:
-    title: 2:3.43 Retrieve Document Set [ITI-43]
-    generation: markdown
   testplan.md:
     title: Test Plan
     generation: markdown
@@ -121,8 +103,6 @@ menu:
     Security Considerations: volume-1.html#1455-mxde-security-considerations
     Cross-Profile Considerations: volume-1.html#1456-mxde-cross-profile-considerations
     Deployment Models: volume-1.html#1457-deployment-models
-  Volume 2:
-    "Retrieve Document Set [ITI-43]": ITI-43.html
   Artifacts: artifacts.html
   Other:
     Test Plan: testplan.html

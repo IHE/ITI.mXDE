@@ -21,9 +21,9 @@ CapabilityStatement for mXDE Data Element Provenance Consumer
 * format[+] = #application/fhir+xml
 * format[+] = #application/fhir+json
 * imports[+] = "https://profiles.ihe.net/ITI/MHD/CapabilityStatement/IHE.MHD.DocumentConsumer"
-* imports[+] = "https://profiles.ihe.net/ITI/PMIR/CapabilityStatement/IHE.PMIR.PatientIdentityConsumer"
-* imports[+] = "https://profiles.ihe.net/ITI/SVCM/CapabilityStatement/IHE.SVCM.TerminologyConsumer"
-* imports[+] = "https://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer"
+* imports[+] = "http://profiles.ihe.net/ITI/PDQm/CapabilityStatement/IHE.PDQm.client"
+* imports[+] = "https://profiles.ihe.net/ITI/PIXm/CapabilityStatement/IHE.PIXm.Consumer"
+* imports[+] = "https://profiles.ihe.net/ITI/BALP/CapabilityStatement/IHE.BALP.AuditCreator"
 * rest
   * mode = #client
   * documentation = "mXDE Data Element Provenance Consumer Actor"
@@ -62,9 +62,9 @@ CapabilityStatement for mXDE Data Element Extracor
 * format[+] = #application/fhir+xml
 * format[+] = #application/fhir+json
 * imports[+] = "https://profiles.ihe.net/ITI/MHD/CapabilityStatement/IHE.MHD.DocumentConsumer"
-* imports[+] = "https://profiles.ihe.net/ITI/PMIR/CapabilityStatement/IHE.PMIR.PatientIdentityConsumer"
-* imports[+] = "https://profiles.ihe.net/ITI/SVCM/CapabilityStatement/IHE.SVCM.TerminologyConsumer"
-* imports[+] = "https://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer"
+* imports[+] = "http://profiles.ihe.net/ITI/PDQm/CapabilityStatement/IHE.PDQm.client"
+* imports[+] = "https://profiles.ihe.net/ITI/PIXm/CapabilityStatement/IHE.PIXm.Consumer"
+* imports[+] = "https://profiles.ihe.net/ITI/BALP/CapabilityStatement/IHE.BALP.AuditCreator"
 * rest
   * mode = #client
   * documentation = "mXDE Data Element Extractor Actor"
