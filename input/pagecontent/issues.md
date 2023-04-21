@@ -3,6 +3,10 @@
 
 ### Significant changes from Revison 1.2 (PDF)
 - Converted to an IG, no content updates
+- Moved definition of Provenance here from QEDm as that enables it to be more specific to where the data are transformed.
+- Added examples of transform and thus use of Provenance.
+- Include CapabilityStatements for the actors
+- depends on MHD, PDQm, PIXm, and BALP
 
 ## Issues
 

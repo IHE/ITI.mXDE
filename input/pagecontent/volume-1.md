@@ -71,10 +71,11 @@ as a “hub” in the middle is providing a location service to access both
 document-level or data element-level health data in a patient-centric
 manner.
 
-<div>
+<figure>
 <img alt="mXDE environment and multilevel granularity access to health information" src="451.png" width="100%">
-</div>
-**Figure 1:45-1: mXDE environment and multilevel granularity access to health information**
+<figcaption><b>Figure 1:45-1: mXDE environment and multilevel granularity access to health information</b></figcaption>
+<br/>
+</figure>
 
 Figure 1:45-2 below, depicts a deployment of the mXDE Profile which can
 support the environment in Figure 1:45-1 above. It illustrates one
@@ -82,10 +83,11 @@ possible combination of mXDE actors (Data Element Extractor and Data
 Element Provenance Consumer) with actors and transactions from the MHD,
 XDS and QEDm IHE Profiles.
 
-<div>
+<figure>
 <img alt="mXDE Profile combining actors and transactions of other IHE Profiles" src="452.png" width="100%">
-</div>
-**Figure 1:45-2: mXDE Profile combining actors and transactions of other IHE Profiles**
+<figcaption><b>Figure 1:45-2: mXDE Profile combining actors and transactions of other IHE Profiles</b></figcaption>
+<br/>
+</figure>
 
 - Document-Level Granularity “publication” is out of scope of this profile but may be performed using the [XDS Provide and Register \[ITI-41\]](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.2.1) transaction, the [MHD Provide Document Bundle \[ITI-65\]](https://profiles.ihe.net/ITI/MHD/ITI-65.html) transaction or other means.
 - Data Element-Level Granularity access is central to mXDE and is discussed in Section 1:45.1. The Provenance information, returned with each fine-grained data element in the Query responses, allows identification of the document from which the fine-grained data element was extracted.
@@ -101,27 +103,29 @@ this implementation guide. Further information about actor and transaction defin
 The mXDE Profile includes two actors:
 
 - The **Data Element Extractor Actor** accesses documents to extract data elements and create the links to the data elements’ source documents.
-
 - The **Data Element Provenance Consumer Actor** uses the provided links from data elements to source documents to obtain broader clinical context in which the data elements were recorded.
 
 Three alternative groupings of actors are supported by mXDE. Each one is depicted by a separate figure below that shows the actors directly involved in the mXDE Profile and the relevant transactions between them. These groupings are further specified in Section 1:45.3.
 
 Grouped actors are shown with conjoined boxes. The actors shown with dotted line boxes are specified by other IHE profiles.
 
-<div>
+<figure>
 <img alt="mXDE Actor Diagram with QEDm and MHD" src="4511.png" width="100%">
-</div>
-**Figure 1:45.1-1: mXDE Actor Diagram with QEDm and MHD**
+<figcaption><b>Figure 1:45.1-1: mXDE Actor Diagram with QEDm and MHD</b></figcaption>
+<br/>
+</figure>
 
-<div>
+<figure>
 <img alt="mXDE Actor Diagram with QEDm and XDS" src="4512.png" width="100%">
-</div>
-**Figure 1:45.1-2: mXDE Actor Diagram with QEDm and XDS**
+<figcaption><b>Figure 1:45.1-2: mXDE Actor Diagram with QEDm and XDS</b></figcaption>
+<br/>
+</figure>
 
-<div>
+<figure>
 <img alt="mXDE Actor Diagram with QEDm, XDS and MHD" src="4513.png" width="100%">
-</div>
-**Figure 1:45.1-3: mXDE Actor Diagram with QEDm, XDS and MHD**
+<figcaption><b>Figure 1:45.1-3: mXDE Actor Diagram with QEDm, XDS and MHD</b></figcaption>
+<br/>
+</figure>
 
 Table 1:45.1-1 lists the transactions for each actor directly involved in
 the mXDE Profile.
@@ -379,10 +383,12 @@ groupings in the mXDE Profile are those specified in Section 1:45.3.
 
 Note: “Data Element” is abbreviated “DE” in the diagram below.
 
-<div>
+<figure>
 <img alt="Basic Process FLow in mXDE Profile" src="4542121.png" width="100%">
-</div>
-**Figure 1:45.4.2.1.2-1: Basic Process Flow in mXDE Profile**
+<figcaption><b>Figure 1:45.4.2.1.2-1: Basic Process Flow in mXDE Profile</b></figcaption>
+<br/>
+</figure>
+
 
 ## 1:45.5 mXDE Security Considerations
 
@@ -514,10 +520,11 @@ Element (DE) Extractor to access the documents for extracting and
 assembling the data elements and the [provenance information](StructureDefinition-IHE.ITI.mXDE.Provenance.html) to be shared
 with the Clinical Data Consumers and the Document Consumers.
 
-<div>
+<figure>
 <img alt="mXDE Deployment Model A" src="45711.png" width="100%">
-</div>
-**Figure 1:45.7.1-1: mXDE Deployment Model A**
+<figcaption><b>Figure 1:45.7.1-1: mXDE Deployment Model A</b></figcaption>
+<br/>
+</figure>
 
 ### 1:45.7.2 mXDE Deployment Model B - Distributed Document Repository and Central Fine-Grained Data Source
 
@@ -541,7 +548,8 @@ This deployment model is a little more complex than the previous one as
 the repositories are distributed, but this complexity is transparent to
 the Clinical Data Consumers and Document Consumers.
 
-<div>
+<figure>
 <img alt="mXDE Deployment Model B" src="45721.png" width="100%">
-</div>
-**Figure 1:45.7.2-1: mXDE Deployment Model B**
+<figcaption><b>Figure 1:45.7.2-1: mXDE Deployment Model B</b></figcaption>
+<br/>
+</figure>

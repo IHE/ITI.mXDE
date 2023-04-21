@@ -40,6 +40,7 @@ This section modifies other IHE profiles or the General Introduction appendices 
 {:.grid .table-striped}
 
 
+---
 
 |------------------------------------------------------------|
 | Editor: Please update Volume 2 [Retrieve Document Set \[ITI-43\]](https://profiles.ihe.net/ITI/TF/Volume2/ITI-43.html) Sections 3.43, 3.43.1 and 3.43.2 as follows.|
@@ -71,8 +72,6 @@ repositoryUniqueId from the Document Registry/Initiating Gateway by
 means of the Registry Stored Query transaction.
 
 ### 2.43.2 Use Case Roles
-
-**TO DO Add Figure**
 
 **<u>XDS Actors:</u>**
 
@@ -107,10 +106,12 @@ Source/Repository Actors can be used interchangeably.
 >
 > **<u>Role: Obtains documents.</u>**
 
-**<u>The [Data Element Extractor](CapabilityStatement-IHE.mXDE.DataElementExtractor.html) obtains documents in the same manner as
+**<u>The Data Element Extractor obtains documents in the same manner as
 the Document Consumer does. In this transaction, the requirements for
 the Data Element Extractor are identical to those for the Document
 Consumer.</u>**
+
+---
 
 |----------------------------------------------|
 | Editor: Please update Figure 3.43.4-1 Interaction Diagram as follows.|
