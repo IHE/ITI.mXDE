@@ -11,7 +11,10 @@
 
 ## Issues
 
+The details are available on github at the link provided. Comments on these github issues are encouraged.
+
 - [mXDE_001](https://github.com/IHE/ITI.mXDE/issues/1): There is no "Transform Considerations" identified in mXDE, but should there be? Such as preserving original identifiers in the resulting FHIR Resources, even when those identifiers can't be used to retrieve the original data, as they are still useful for de-duplication downstream.
+- [mXDE_003](https://github.com/IHE/ITI.mXDE/issues/3) nXDE_003: Use of Document Consumer grouping. The original mXDE chose not to group with Document Consumer, but rather chose to add the mXDE actor to the ITI-43 (Retrieve Document Set) transaction. I recommend we change to grouping with Document Consumer (possibly Content Consumer) to enable broader support such as MHDS and XCA.
 
 ### Submit an Issue
 
