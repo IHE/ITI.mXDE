@@ -1,5 +1,4 @@
 == Suppressed Messages ==
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 
-# current IG builder throws this. Should be eliminated later
-WARNING: /scratch/ig-build-temp-441U70/repo/fsh-generated/resources/ImplementationGuide-ihe.iti.mxde: Unknown Parameters: []
+
