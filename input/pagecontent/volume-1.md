@@ -149,10 +149,10 @@ Most requirements are documented in ITI TF-2: Transactions. This section documen
 Defined in [Data Element Extractor](CapabilityStatement-IHE.mXDE.DataElementExtractor.html) requirements CapabilityStatement:
 
 - Shall access documents, through:
-- a grouped [XDS Document Registry](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1.3) and the [Retrieve Document Set \[ITI-43\]](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.2.7) transaction, or
+  - a grouped [XDS Document Registry](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.1.3) and the [Retrieve Document Set \[ITI-43\]](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html#10.1.2.7) transaction, or
   - a grouped [MHD Document Responder](https://profiles.ihe.net/ITI/MHD/1331_actors_and_transactions.html#133114-document-responder).
-- Shall extract the data element information from the retrieved documents
-- Shall obtain the provenance information and create a [profiled Provenance Resource](StructureDefinition-IHE.ITI.mXDE.Provenance.html) associated with extracted data elements
+- Shall extract the data element information from the retrieved documents.
+- Shall obtain the provenance information and create a [profiled Provenance Resource](StructureDefinition-IHE.ITI.mXDE.Provenance.html) associated with extracted data elements.
 - Shall make the Provenance Resource available to the grouped PCC [QEDm](https://profiles.ihe.net/PCC/QEDm/index.html) Clinical Data Source using the Document Provenance Option. This allows [provenance](StructureDefinition-IHE.ITI.mXDE.Provenance.html) information to be returned in its query responses along with the extracted data elements.
 
 #### 1:45.1.1.2 Data Element Provenance Consumer
@@ -384,7 +384,7 @@ groupings in the mXDE Profile are those specified in Section 1:45.3.
 Note: “Data Element” is abbreviated “DE” in the diagram below.
 
 <figure>
-<img alt="Basic Process FLow in mXDE Profile" src="4542121.png" width="100%">
+<img alt="Basic Process Flow in mXDE Profile" src="4542121.png" width="100%">
 <figcaption><b>Figure 1:45.4.2.1.2-1: Basic Process Flow in mXDE Profile</b></figcaption>
 <br/>
 </figure>

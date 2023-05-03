@@ -1,20 +1,15 @@
 
 ## Significant Changes
 
-### Significant changes from Revision 1.2 (PDF)
+### Significant Changes from Revision 1.2 (PDF)
 
 - Converted to an IG, no content updates
-- Moved definition of Provenance here from QEDm as that enables it to be more specific to where the data are transformed.
-- Added examples of transform and thus use of Provenance.
+- Moved definition of Provenance here from QEDm as that enables it to be more specific to where the data are transformed
+- Added examples of transform and thus use of Provenance
 - Include CapabilityStatements for the actors
-- depends on MHD, PDQm, PIXm, and BALP
+- Depends on MHD, PDQm, PIXm, and BALP
 
 ## Issues
-
-The details are available on github at the link provided. Comments on these github issues are encouraged.
-
-- [mXDE_001](https://github.com/IHE/ITI.mXDE/issues/1): There is no "Transform Considerations" identified in mXDE, but should there be? Such as preserving original identifiers in the resulting FHIR Resources, even when those identifiers can't be used to retrieve the original data, as they are still useful for de-duplication downstream.
-- [mXDE_003](https://github.com/IHE/ITI.mXDE/issues/3): Use of Document Consumer grouping. The original mXDE chose not to group with Document Consumer, but rather chose to add the mXDE actor to the ITI-43 (Retrieve Document Set) transaction. I recommend we change to grouping with Document Consumer (possibly Content Consumer) to enable broader support such as MHDS and XCA.
 
 ### Submit an Issue
 
@@ -28,7 +23,10 @@ It is important to note that as soon as a Change Proposal is approved, it carrie
 
 These issues were known as part of the publication and IHE invites comments.
 
-- None
+The details are available on github at the link provided. Comments on these github issues are encouraged.
+
+- [mXDE_001](https://github.com/IHE/ITI.mXDE/issues/1): There is no "Transform Considerations" identified in mXDE, but should there be? Such as preserving original identifiers in the resulting FHIR Resources, even when those identifiers can't be used to retrieve the original data, as they are still useful for de-duplication downstream.
+- [mXDE_003](https://github.com/IHE/ITI.mXDE/issues/3): Use of Document Consumer grouping. The original mXDE chose not to group with Document Consumer, but rather chose to add the mXDE actor to the ITI-43 (Retrieve Document Set) transaction. I recommend we change to grouping with Document Consumer (possibly Content Consumer) to enable broader support such as MHDS and XCA.
 
 ### Closed Issues
 
