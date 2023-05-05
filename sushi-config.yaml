@@ -4,13 +4,13 @@
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
 id: ihe.iti.mxde
 canonical: https://profiles.ihe.net/ITI/mXDE
-version: 1.3.0-comment
+version: 1.3.0-resolving
 name: IHE_ITI_mXDE
 title: "Mobile Cross-Enterprise Document Data Element Extraction (mXDE)"
 description: The Mobile Cross-Enterprise Document Data Element Extraction (mXDE) Profile provides the means to access data elements extracted from shared structured documents. The profile enables the deployment of health data exchange infrastructures where fine-grained access to health data coexists and complements the sharing of coarse-grained documents and the fine-grained data elements they contain.
-#releaseLabel: ci-build
-releaseLabel: ballot
-date: 2023-05-04
+releaseLabel: ci-build
+#releaseLabel: ballot
+#date: 2023-05-04
 status: active
 publisher:
   - name: IHE IT Infrastructure Technical Committee
