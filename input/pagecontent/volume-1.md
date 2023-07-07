@@ -201,9 +201,8 @@ between options when applicable are specified in notes.
 </tbody>
 </table>
 
-*Note 1: The actor shall implement at least one of the options: XDS Document Registry Integration or MHD Document Responder Integration*
-
-*Note 2: The actor shall implement at least one of the options: XDS Document Consumer Integration or MHD Document Consumer Integration.*
+- Note 1: The actor shall implement at least one of the options: XDS Document Registry Integration or MHD Document Responder Integration
+- Note 2: The actor shall implement at least one of the options: XDS Document Consumer Integration or MHD Document Consumer Integration
 
 ### 1:45.2.1 Data Element Extractor Actor Options
 
@@ -319,9 +318,8 @@ Option</td>
 </tbody>
 </table>
 
-*Note 1: Currently in the PCC QEDm Trial Implementation Supplement*
-
-*Note 2: Currently in the MHD Trial Implementation Supplement*
+- Note 1: Currently in the PCC QEDm Trial Implementation Supplement
+- Note 2: Currently in the MHD Trial Implementation Supplement
 
 Section 1:45.5 describes some optional groupings that may be of interest
 for security considerations and Section 1:45.6 describes some optional
@@ -353,7 +351,7 @@ identity and on certain search criteria.
 
 A patient encounters his family physician who advises him to make an
 appointment for a surgical procedure. Consequently, the family physician
-produces and shares a Transfer of Care document in an 
+produces and shares a Transfer of Care document in an
 [XDS Affinity Domain](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html). He also shares a Pharmacy Prescription document.
 
 Following the encounter, the patient makes an appointment with the local
@@ -388,7 +386,6 @@ Note: “Data Element” is abbreviated “DE” in the diagram below.
 <figcaption><b>Figure 1:45.4.2.1.2-1: Basic Process Flow in mXDE Profile</b></figcaption>
 <br/>
 </figure>
-
 
 ## 1:45.5 mXDE Security Considerations
 

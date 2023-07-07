@@ -14,8 +14,6 @@ This section modifies other IHE profiles or the General Introduction appendices 
 |Data Element Provenance Consumer | The Data Element Provenance Consumer uses the provenance information associated with data elements to access the source information. |
 {:.grid .table-striped}
 
-
-
 ## IHE Technical Frameworks General Introduction Appendix B: Transactions
 
 |------------------------------------------------|
