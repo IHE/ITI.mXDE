@@ -1,18 +1,18 @@
-Instance: IHE.mXDE.DataElementProvenanceConsumer
+Instance: IHE.mXDE.ClinicalDataConsumer
 InstanceOf: CapabilityStatement
-Title: "mXDE Data Element Provenance Consumer Actor"
+Title: "mXDE Clinical Data Consumer Actor"
 Usage: #definition
 Description: """
-CapabilityStatement for mXDE Data Element Provenance Consumer Actor
+CapabilityStatement for mXDE Clinical Data Consumer Actor
 
-Accesses documents to extract data elements and create the links to the data elements' source documents.
+Uses available Provenance to retrieve source documents.
 """
 * description = """
-CapabilityStatement for mXDE Data Element Provenance Consumer
+CapabilityStatement for mXDE Clinical Data Consumer
 """
-* url = "https://profiles.ihe.net/ITI/mXDE/CapabilityStatement/IHE.mXDE.DataElementProvenanceConsumer"
+* url = "https://profiles.ihe.net/ITI/mXDE/CapabilityStatement/IHE.mXDE.ClinicalDataConsumer"
 * name = "IHE_mXDE_DataElementProvenanceConsumer"
-* title = "mXDE Data Element Provenance Consumer Actor"
+* title = "mXDE Clinical Data Consumer Actor"
 * status = #active
 * experimental = false
 * date = "2023-02-10"
@@ -26,7 +26,7 @@ CapabilityStatement for mXDE Data Element Provenance Consumer
 * imports[+] = "https://profiles.ihe.net/ITI/BALP/CapabilityStatement/IHE.BALP.AuditCreator"
 * rest
   * mode = #client
-  * documentation = "mXDE Data Element Provenance Consumer Actor"
+  * documentation = "mXDE Clinical Data Consumer Actor"
   * security
     * description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or [SMART-app-launch](http://www.hl7.org/fhir/smart-app-launch/)"
   * resource[+]
