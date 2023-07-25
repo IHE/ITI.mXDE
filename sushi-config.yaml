@@ -13,9 +13,9 @@ releaseLabel: ci-build
 #date: 2023-05-04
 status: active
 publisher:
-  - name: IHE IT Infrastructure Technical Committee
-  - url: https://www.ihe.net/ihe_domains/it_infrastructure/
-  - email: iti@ihe.net
+  name: IHE IT Infrastructure Technical Committee
+  url: https://www.ihe.net/ihe_domains/it_infrastructure/
+  email: iti@ihe.net
 contact:
   - name: IHE IT Infrastructure Technical Committee
     telecom:
@@ -66,7 +66,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   apply-publisher: 'true'
   apply-version: 'true'
 
-resources:
+#resources:
 # list every example here with a name, description and that exampleBoolean is true; These are used to populate the artifacts page, and are needed to eliminate build warnings 
 # You may delay filling out this section until you approach publication as it is merely a nice to have and eliminates build warnings -- If you do this then you will need above the autoload-resources true
 
@@ -102,7 +102,7 @@ menu:
     Overview: volume-1.html#1454-mxde-overview
     Security Considerations: volume-1.html#1455-mxde-security-considerations
     Cross-Profile Considerations: volume-1.html#1456-mxde-cross-profile-considerations
-    Deployment Models: volume-1.html#1457-deployment-models
+    Deployment Models: volume-1.html#1457-mxde-deployment-models
   Artifacts: artifacts.html
   Other:
     Test Plan: testplan.html

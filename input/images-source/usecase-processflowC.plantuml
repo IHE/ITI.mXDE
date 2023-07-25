@@ -1,0 +1,53 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+autonumber
+title "mXDE Process Flow: client internals"
+box "Grouped Client"
+participant "QEDm\nClinical Data Client" as qClient
+participant "mXDE\nClinical Data Client" as pClient
+participant "Document Sharing\nContent Consumer" as dClient
+end box
+box "Grouped Server"
+participant "QEDm\nClinical Data Source" as qServer
+participant "mXDE\nData Element Extractor" as extractor
+participant "Document Sharing\nInfrastructure" as dServer
+end box
+
+
+activate qClient
+qClient ->o qServer : PCC-44
+activate qServer
+
+qServer --> extractor: trigger?
+
+qClient <- qServer : response with clinical Resources including Provenance
+note over qServer : Record AuditEvent
+deactivate qServer
+
+note over qClient : Record AuditEvent
+
+qClient -> qClient : utalize data element (Resources) results 
+activate pClient
+qClient -> pClient : determine need to look at Provenance
+
+pClient -> dClient : look at Provenance need document
+deactivate pClient
+
+activate dClient
+dClient ->o dServer : PCC-1 (e.g. XDS, XCA, MHD)
+activate dServer
+dClient <-- dServer : return document
+note over dServer : Record AuditEvent
+deactivate dServer
+
+note over dClient : Record AuditEvent
+
+dClient -> dClient : utalize document
+
+deactivate dClient
+
+
+deactivate qClient 
+
+@enduml

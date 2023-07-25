@@ -1,0 +1,23 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+autonumber
+title "mXDE Process Flow: Server internals"
+
+box "Grouped Server"
+participant "QEDm\nClinical Data Source" as qServer
+participant "mXDE\nData Element Extractor" as extractor
+participant "Document Sharing\nInfrastructure" as dServer
+end box
+
+activate extractor
+note over extractor: may be triggered by DSUB, polling, QEDm query, Document Publish, or other
+extractor -> extractor: triggered
+extractor -> dServer: Query/Retrieve Document 
+extractor -> extractor: decompose document into potential Resources
+extractor -> qServer: update existing Resources, create new
+extractor -> qServer: create Provenance for this document
+note over extractor : Record AuditEvents
+deactivate extractor
+
+@enduml
