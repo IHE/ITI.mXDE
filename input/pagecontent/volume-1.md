@@ -139,7 +139,7 @@ Option</td>
 <tr>
 <td>Required</td>
 <td>ATNA / Secure Node or Secure Application</td>
-<td>[ITI TF-1: 9</td>
+<td>ITI TF-1: 9</td>
 </tr>
 <tr>
 <td rowspan="3">Clinical Data Consumer</td>
