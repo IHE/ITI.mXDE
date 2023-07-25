@@ -323,7 +323,7 @@ addressed by the [QEDm](https://profiles.ihe.net/PCC/QEDm/index.html) Profile.
 
 The Data Element Extractor, and actors with which it is grouped, is
 grouped with an [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html) Secure Node or Secure Application to provide
-logging and other security features (see ITI TF-2a: 3.20). It is
+logging and other security features (see ITI TF-2: 3.20). It is
 recommended that the Clinical Data Consumer be grouped with an
 [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html) Secure Node or Secure Application
 
