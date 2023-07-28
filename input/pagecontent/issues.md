@@ -3,12 +3,15 @@
 
 ### Significant Changes from Revision 1.2 (PDF)
 
-- Converted to an IG, no content updates
-- Moved definition of Provenance here from QEDm as that enables it to be more specific to where the data are transformed
-- Added examples of transform and thus use of Provenance
+1.3.0 Trial-Implementation
+
+- Public Comment resolution
+- Converted to an IG
+- Moved definition of Provenance here from QEDm as that enables it to be more specific to where the data are transformed.
+- Added examples of transform and thus use of Provenance.
 - Include CapabilityStatements for the actors
-- Depends on MHD, PDQm, PIXm, and BALP
-- Using Document Source actor rather than updating the XDS transactions (was [mXDE_003](https://github.com/IHE/ITI.mXDE/issues/3) )
+- architect using Content Consumer and grouping with Document Sharing
+- depends on MHD, PDQm, PIXm, and BALP
 
 ## Issues
 
