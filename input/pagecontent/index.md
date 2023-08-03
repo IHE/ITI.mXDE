@@ -25,13 +25,12 @@ This guide is organized into the following sections:
   - [Security Considerations](volume-1.html#1455-mxde-security-considerations)
   - [Cross Profile Considerations](volume-1.html#1456-mxde-cross-profile-considerations)
   - [Deployment Models](volume-1.html#1457-mxde-deployment-models)
-- [Test Plan](testplan.html)
 - Other
   - [Changes to Other Documents](other.html)
   - [Downloads](downloads.html)
+  - [Test Plan](testplan.html)
 
-Click on any of the links above, navigate the contents using the [Table of Contents](toc.html) or,
-if you are looking for a specific artifact, see the index of [Artifacts](artifacts.html).
+See also the [Table of Contents](toc.html) and the index of [Artifacts](artifacts.html) defined as part of this implementation guide.
 
 ### Conformance Expectations
 

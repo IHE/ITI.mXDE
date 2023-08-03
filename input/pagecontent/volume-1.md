@@ -17,11 +17,11 @@ Each granularity level delivers unique benefits and this profile provides effici
 
 This profile defines rules to ensure consistency and traceability of information used for clinical decisions. When a data element is accessed by a Clinical Data Consumer, identifiers from that data element can be used to access one or more documents in which this data element was originally recorded, providing a valuable broader clinical context.
 
-The flows of information are depicted in the Figure 4-1:
+The flows of information are depicted in the Figure 1:45-1:
 
 <figure>
 <img alt="mXDE Flow from Documents to Resources" src="mXDE.png" width="100%">
-<figcaption><b>Figure 1:4-1: mXDE Flow from Documents to Resources</b></figcaption>
+<figcaption><b>Figure 1:45-1: mXDE Flow from Documents to Resources</b></figcaption>
 <br/>
 </figure>
 
@@ -42,7 +42,7 @@ The mapping of the document to data elements is outside the scope of the
 mXDE Profile. It needs to be specified for each deployment based on the
 specific document content and data elements managed.
 
-This profile supports a variety of deployment models discussed in [Section 1:45.7](volume-1.html#1457-mxde-deployment-models)
+This profile supports a variety of deployment models discussed in [Section 1:45.7](volume-1.html#1457-mxde-deployment-models).
 
 ## 1:45.1 mXDE Actors, Transactions, and Content Modules
 
@@ -66,7 +66,7 @@ Table 1:45.1-1 lists the transactions for each actor directly involved in the mX
 
 ### 1:45.1.1 Actor Descriptions and Actor Profile Requirements
 
-This section documents any non-transaction specific Actor requirements.
+This section documents any non-transaction specific actor requirements.
 
 #### 1:45:1.1.1 Data Element Extractor
 
@@ -97,9 +97,9 @@ between options when applicable are specified in notes.
 **Table 1:45.2-1: mXDE - Actors and Options**
 
 |Actor | Option Name | Reference |
-|----------------------------------|-----------------------------------|----------------|-----------------|
-| Data Element Extractor           | None                              | \-             | \-              |
-| Clinical Data Consumer           | None                              | \-             | \-              |
+|----------------------------------|-------------------------|----------------|
+| Data Element Extractor           | None                 | \-             |
+| Clinical Data Consumer           | None                    | \-              |
 {:.grid .table-striped}
 
 ## 1:45.3 mXDE Required Actor Groupings
@@ -161,7 +161,7 @@ Option</td>
 </tbody>
 </table>
 
-PCC **Content Consumer** Actor is an abstract actor that can be implemented by the various [Document Sharing exchanges](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html). The actual capabilities would be indicated in the products [IHE Integration Statement](https://profiles.ihe.net/GeneralIntro/ch-F.html) with grouped specific Document Sharing Profile and Actor statements.
+PCC **Content Consumer** is an abstract actor that can be implemented by the various [Document Sharing exchanges](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html). The actual capabilities would be indicated in the products [IHE Integration Statement](https://profiles.ihe.net/GeneralIntro/ch-F.html) with grouped specific Document Sharing Profile and Actor statements.
 
 Section [1:45.5 Security Considerations](volume-1.html#1455-mxde-security-considerations) describes some optional groupings that may be of interest
 for security considerations and Section [1:45.6 Cross Profile Considerations](volume-1.html#1456-mxde-cross-profile-considerations) describes some optional
@@ -243,14 +243,14 @@ The Grouped Server will respond to the externally visible transactions as define
 <br clear="all">
 
 1. Some trigger causes the mXDE Data Element Extractor process to happen. This trigger is not defined by mXDE as it is a systems design that will depend on the deployment model and the available resources. This trigger may be:
-   1. polling the Document Sharing infrastructure in the background
-   2. a QEDm Clinical Data Consumer querying the QEDm Clinical Data Source
-   3. a Document being published to a grouped Document Repository or Document Registry
+   1. Polling the Document Sharing infrastructure in the background
+   2. A QEDm Clinical Data Consumer querying the QEDm Clinical Data Source
+   3. A Document being published to a grouped Document Repository or Document Registry
    4. use of the DSUB or other subscription method
-2. retrieve the document available
+2. Retrieve the document available
    1. This may be by a grouping with the Document Sharing Infrastructure
    2. This may be by a Document Consumer grouping that executes a query for documents and then selectively retrieves a document
-3. decomposition of the content of the document into potential clinical Resources
+3. Decomposition of the content of the document into potential clinical Resources
 4. Update or Create the clinical Resources in the QEDm Clinical Data Source
    1. Where the potential Resource is an updated version of a Resource instance that is already available in the QEDm Clinical Data Source, then the result will be updating of that existing Resource instance
    2. Where the potential Resource does not exist, then a new Resource will be created on the QEDm Clinical Data Source
@@ -266,15 +266,15 @@ The Grouped Client initiates the interaction based on some undefined need. There
 </figure>
 <br clear="all">
 
-1. QEDm PCC-44 is used to request some clinical resources, and also ask for Provenance for any clinical resources returned.
-2. note that this is a potential trigger for the server side mXDE Data Element Extractor
-3. some clinical resources and their Provenance are returned
-4. some client need uses the clinical Resources
-5. some reason for needing to understand the context of one or more of the clinical Resources is reason to look at the Provenance
+1. QEDm PCC-44 is used to request some clinical resources, and also ask for Provenance for any clinical resources returned
+2. Note that this is a potential trigger for the server side mXDE Data Element Extractor
+3. Some clinical resources and their Provenance are returned
+4. Some client need uses the clinical Resources
+5. Some reason for needing to understand the context of one or more of the clinical Resources is reason to look at the Provenance
 6. From the Provenance the document from which the clinical Resource was extracted is found
 7. PCC-1 (e.g. XDS, XCA, MHD, etc) is used to Query and Retrieve the document
-8. the document is returned
-9. some client need is satisfied by utalization of the document
+8. The document is returned
+9. Some client need is satisfied by utalization of the document
 
 ## 1:45.5 mXDE Security Considerations
 
@@ -325,9 +325,9 @@ The Data Element Extractor, and actors with which it is grouped, is
 grouped with an [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html) Secure Node or Secure Application to provide
 logging and other security features (see ITI TF-2: 3.20). It is
 recommended that the Clinical Data Consumer be grouped with an
-[ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html) Secure Node or Secure Application
+[ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html) Secure Node or Secure Application.
 
-### 1:45.5.1 mXDE integrity and credibility of information accessed
+### 1:45.5.1 mXDE Integrity and Credibility of Information Accessed
 
 The mXDE Profile provides a controlled approach to access the same
 health information either in a document-level (coarse grain) granularity
@@ -340,7 +340,7 @@ issues:
 
 - Different forms of mappings may have to be performed when actor groupings have been implemented (it is beyond the scope of the mXDE Profile to specify mapping between data elements in documents and data elements accessed directly) and the consequences need to be accounted for:
   - Such mappings may not be perfect (typical limitations in semantic mappings).
-  - Some information contained in the documents may not be “expressed” as data elements (e.g., textual elements) and will be unavailable in the data element queries
+  - Some information contained in the documents may not be “expressed” as data elements (e.g., textual elements) and will be unavailable in the data element queries.
 - Some document authors that have approved or signed a document, may object to individual data elements being extracted from the overall document context. The data elements from such documents would not be visible at the data element level of access. Examples when such a situation arises are:
   - non-coded information is critical to interpret the coded information,
   - constraints that require that specific information be only for display but excluded from being copied or imported,
@@ -390,7 +390,7 @@ Because of the decentralized nature of the Document Repositories, the
 mXDE Data Element Extractor must retrieve the documents from the
 various XDS Document Repositories for extracting and assembling the data
 elements and the [provenance information](StructureDefinition-IHE.ITI.mXDE.Provenance.html) to be shared with the Clinical
-Data Consumer. In this deployment model the Grouped Server would need to implement a **Content Consumer** actor and interact using XDS or MHD Document Consumer Actor.
+Data Consumer. In this deployment model, the Grouped Server would need to implement a **Content Consumer** and interact using XDS or MHD Document Consumer.
 
 This deployment model is a little more complex than the previous one as
 the Document Repositories may be distributed, but this complexity is transparent to
@@ -405,7 +405,7 @@ which the fine-grained queries are directed.
 
 The
 mXDE Data Element Extractor must query and retrieve the documents from external Document Registry and Document Repository.
-In this deployment model the Grouped Server (as shown above) would not include Document Sharing Infrastructure. The mXDE Data Element Extractor would need to implement a **Content Consumer** actor and interact using XDS, XCA, or MHD Document Consumer Actor. With XDS the DSUB profile may be used to trigger the mXDE Data Element Extractor to process newly published documents as they get published. Otherwise the mXDE Data Element Extractor would trigger on QEDm requests or continuously poll.
+In this deployment model, the Grouped Server (as shown above) would not include Document Sharing Infrastructure. The mXDE Data Element Extractor would need to implement a **Content Consumer** and interact using XDS, XCA, or MHD Document Consumer Actor. With XDS the DSUB profile may be used to trigger the mXDE Data Element Extractor to process newly published documents as they get published. Otherwise the mXDE Data Element Extractor would trigger on QEDm requests or continuously poll.
 
 This deployment model is more general and could thus be connected to any Document Sharing infrastructure, depending on that infrastructure support for the XDS vs MHD Document Consumer grouped with the mXDE Data Element Extractor.
 

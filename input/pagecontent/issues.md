@@ -7,11 +7,11 @@
 
 - Public Comment resolution
 - Converted to an IG
-- Moved definition of Provenance here from QEDm as that enables it to be more specific to where the data are transformed.
-- Added examples of transform and thus use of Provenance.
+- Moved definition of Provenance here from QEDm as that enables it to be more specific to where the data are transformed
+- Added examples of transform and thus use of Provenance
 - Include CapabilityStatements for the actors
-- architect using Content Consumer and grouping with Document Sharing
-- depends on MHD, PDQm, PIXm, and BALP
+- Architect using Content Consumer and grouping with Document Sharing
+- Depends on MHD, PDQm, PIXm, and BALP
 
 ## Issues
 
