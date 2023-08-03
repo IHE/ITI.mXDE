@@ -87,10 +87,10 @@ pages:
     title: Significant Changes & Issues
     generation: markdown
   other.md:
-    title: Changes to Other IHE Specifications
+    title: Changes to Other IHE Documents
     generation: markdown
   downloads.md:
-    title: Downloads and Analysis
+    title: Download and Analysis
     generation: markdown
     
 menu:
@@ -106,7 +106,7 @@ menu:
     Deployment Models: volume-1.html#1457-mxde-deployment-models
   Artifacts: artifacts.html
   Other:
-    Test Plan: testplan.html
-    Changes to Other IHE Specifications: other.html
+    Changes to Other IHE Documents: other.html
     Downloads and Analysis: downloads.html
+    Test Plan: testplan.html
     
