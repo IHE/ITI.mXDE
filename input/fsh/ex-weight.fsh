@@ -1,8 +1,9 @@
 Instance:   ex-weight
-InstanceOf: Observation
-Title: "Example of an bodyWeight R4 observation"
+InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyweight
+Title: "Example of a bodyWeight R4 observation"
 Description: """
 Sample for demonstration purposes of a common weight Observation
+- marked as compliant with IHE.ToDo.bodyWeight profile
 - marked as test data
 - status of final
 - category vital-signs
@@ -12,17 +13,23 @@ Sample for demonstration purposes of a common weight Observation
 - weight 185 pounds
 - note: a bit heavy
 """
-* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#N
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code = http://loinc.org#29463-7
 * subject = Reference(Patient/ex-patient)
+* performer = Reference(Practitioner/ex-author)
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
-* valueQuantity = 185 '[lb_av]' 
+* valueQuantity = 185 '[lb_av]' "pounds"
 * note.text = "a bit heavy"
+* encounter = Reference(Encounter/ex-encounter)
 
-Instance:   ex-weight-stone
-InstanceOf: Observation
+
+
+
+Instance:   ex-weight-2
+InstanceOf: http://hl7.org/fhir/StructureDefinition/bodyweight
 Title: "Example of an valid FHIR bodyWeight R4 observation, but not compliant with the profile"
 Description: """
 Sample for demonstration purposes of a common weight Observation.
@@ -35,19 +42,19 @@ Sample for demonstration purposes of a common weight Observation.
 - subject of the example patient
 - linked to an encounter
 - effectiveDateTime = March 28, 2016
-- weight 20 stone
+- weight 280 lbs
 - note: a bit heavy, about 280 lbs
 """
-* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#N
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 * code.text = "body weight"
-* code.coding = LOINC#29463-7
-* code.coding[1] = LOINC#3141-9
-* code.coding[2] = SCT#27113001
-//* code.coding[3] = http://acme.org/devices/clinical-codes#body-weight "Body Weight"
+* code.coding[BodyWeightCode] = LOINC#29463-7
 * subject = Reference(Patient/ex-patient)
-* encounter = Reference(Encounter/ex-encounter)
+* performer = Reference(Practitioner/ex-author)
+* encounter = Reference(Encounter/example)
 * effectiveDateTime = 2016-03-28
-* valueQuantity = 20 '[stone_av]' 
+* valueQuantity = 280 '[lb_av]' "pounds"
 * note.text = "a bit heavy, about 280 lbs"
+* encounter = Reference(Encounter/ex-encounter)

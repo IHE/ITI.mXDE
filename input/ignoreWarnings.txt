@@ -2,3 +2,6 @@
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 
 
+# understood these are draft
+Reference to experimental CodeSystem http://hl7.org/fhir/w3c-provenance-activity-type|4.0.1
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|0.1.0
