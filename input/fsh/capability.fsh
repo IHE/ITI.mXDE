@@ -32,7 +32,7 @@ CapabilityStatement for mXDE Clinical Data Consumer
   * resource[+]
     * type = #Provenance
     * documentation = "record"
-    * supportedProfile[+] = "https://profiles.ihe.net/ITI/mXDE/IHE.ITI.mXDE.Provenance"
+    * supportedProfile[+] = Canonical(IHE.ITI.mXDE.Provenance)
     * interaction[+].code = #search-type
     * interaction[+].code = #read
     * interaction[+].code = #create
@@ -73,7 +73,7 @@ CapabilityStatement for mXDE Data Element Extracor
   * resource[+]
     * type = #Provenance
     * documentation = "record"
-    * supportedProfile[+] = "https://profiles.ihe.net/ITI/mXDE/IHE.ITI.mXDE.Provenance"
+    * supportedProfile[+] = Canonical(IHE.ITI.mXDE.Provenance)
     * interaction[+].code = #search-type
     * interaction[+].code = #read
     * interaction[+].code = #create

@@ -5,5 +5,5 @@
 # understood these are draft
 MSG_DRAFT
 
-# understood these are experimental
+# understand that this codeSystem is marked as experimental (FHIR-45446 asks to change that)
 MSG_EXPERIMENTAL
