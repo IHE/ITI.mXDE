@@ -36,7 +36,7 @@ dependencies:
   ihe.iti.pdqm: 
     id: ihepdqm
     uri: https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm
-    version: 2.4.x
+    version: 3.0.x
   ihe.iti.pixm:
     id: iheitipixm
     uri: https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm
