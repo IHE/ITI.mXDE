@@ -24,7 +24,7 @@ Provenance profile for use in mXDE when the data-elements (Resources pointed to 
 * policy = "urn:ihe:iti:mxde:2023:document-provenance-policy"
 * activity 1..1
 * activity = http://hl7.org/fhir/w3c-provenance-activity-type#Derivation
-* agent ^slicing.discriminator.type = #pattern
+* agent ^slicing.discriminator.type = #value
 * agent ^slicing.discriminator.path = "type"
 * agent ^slicing.rules = #open
 * agent contains theAssembler 1..1
