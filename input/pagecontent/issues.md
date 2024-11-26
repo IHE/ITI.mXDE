@@ -1,6 +1,11 @@
 
 ## Significant Changes
 
+### 1.2.1
+
+- add an example of a search set bundle
+- switch away from #pattern slicing as that has been deprecated as duplicate of #value slicing
+
 ### Significant Changes from Revision 1.2 (PDF)
 
 1.3.0 Trial-Implementation
