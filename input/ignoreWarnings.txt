@@ -1,9 +1,15 @@
 == Suppressed Messages ==
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 
-
-# understood these are draft
-MSG_DRAFT
-
 # understand that this codeSystem is marked as experimental (FHIR-45446 asks to change that)
 MSG_EXPERIMENTAL
+
+# no good reason to pin a version, any version is okay
+There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse'.%
+There are multiple different potential matches for the url 'https://profiles.ihe.net/ITI/BALP/CapabilityStatement/IHE.BALP.AuditCreator'.%
+
+# imported from fhir core
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+
+# canonical defined within
+No definition could be found for URL value 'volume-1.html'
