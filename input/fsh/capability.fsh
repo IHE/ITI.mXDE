@@ -21,7 +21,8 @@ CapabilityStatement for mXDE Clinical Data Consumer
 * format[+] = #application/fhir+xml
 * format[+] = #application/fhir+json
 * imports[+] = "https://profiles.ihe.net/ITI/MHD/CapabilityStatement/IHE.MHD.DocumentConsumer"
-* imports[+] = "http://profiles.ihe.net/ITI/PDQm/CapabilityStatement/IHE.PDQm.client"
+* imports[+] = "https://profiles.ihe.net/ITI/PDQm/CapabilityStatement/IHE.PDQm.PatientDemographicsConsumerMatch"
+* imports[+] = "https://profiles.ihe.net/ITI/PDQm/CapabilityStatement/IHE.PDQm.PatientDemographicsConsumerQuery"
 * imports[+] = "https://profiles.ihe.net/ITI/PIXm/CapabilityStatement/IHE.PIXm.Consumer"
 * imports[+] = "https://profiles.ihe.net/ITI/BALP/CapabilityStatement/IHE.BALP.AuditCreator"
 * rest
@@ -62,7 +63,8 @@ CapabilityStatement for mXDE Data Element Extracor
 * format[+] = #application/fhir+xml
 * format[+] = #application/fhir+json
 * imports[+] = "https://profiles.ihe.net/ITI/MHD/CapabilityStatement/IHE.MHD.DocumentConsumer"
-* imports[+] = "http://profiles.ihe.net/ITI/PDQm/CapabilityStatement/IHE.PDQm.client"
+* imports[+] = "https://profiles.ihe.net/ITI/PDQm/CapabilityStatement/IHE.PDQm.PatientDemographicsConsumerMatch"
+* imports[+] = "https://profiles.ihe.net/ITI/PDQm/CapabilityStatement/IHE.PDQm.PatientDemographicsConsumerQuery"
 * imports[+] = "https://profiles.ihe.net/ITI/PIXm/CapabilityStatement/IHE.PIXm.Consumer"
 * imports[+] = "https://profiles.ihe.net/ITI/BALP/CapabilityStatement/IHE.BALP.AuditCreator"
 * rest
